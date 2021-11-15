@@ -12,16 +12,17 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class ActionnaireInfraImpl  extends AbstractInfraImpl implements ActionnaireInfra {
+public class ActionnaireInfraImpl extends AbstractInfraImpl implements ActionnaireInfra {
 
     @Autowired
     private ActionnaireDao actionnaireDao;
+
     @Override
     public Actionnaire findByReference(String reference) {
         ActionnaireEntity actionnaireEntity = actionnaireDao.findByReference(reference);
-        Actionnaire actionnaire= new Actionnaire();
-        if(actionnaireEntity!=null){
-            BeanUtils.copyProperties(actionnaireEntity,actionnaire);
+        Actionnaire actionnaire = new Actionnaire();
+        if (actionnaireEntity != null) {
+            BeanUtils.copyProperties(actionnaireEntity, actionnaire);
         }
         return actionnaire;
     }
@@ -31,8 +32,12 @@ public class ActionnaireInfraImpl  extends AbstractInfraImpl implements Actionna
         return actionnaireDao.deleteByReference(reference);
     }
 
+
+
     @Override
-    public int save(ActionnaireEntity actionnaireEntity) {
+    public int save(Actionnaire actionnaire) {
+        ActionnaireEntity actionnaireEntity = new ActionnaireEntity();
+        BeanUtils.copyProperties(actionnaire, actionnaireEntity);
         if (findByReference(actionnaireEntity.getRef()) != null) {
             return -1;
         }
@@ -56,7 +61,7 @@ public class ActionnaireInfraImpl  extends AbstractInfraImpl implements Actionna
     @Override
     public int update(Actionnaire actionnaire) {
         ActionnaireEntity actionnaireEntity = new ActionnaireEntity();
-        BeanUtils.copyProperties(actionnaire,actionnaireEntity);
+        BeanUtils.copyProperties(actionnaire, actionnaireEntity);
         return update(actionnaireEntity);
     }
 }

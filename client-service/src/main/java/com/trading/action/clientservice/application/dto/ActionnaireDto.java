@@ -15,6 +15,15 @@ public class ActionnaireDto {
     private List<ActionDto> actions;
     private List<TransactionDto> transactions;
     private CompteDto compte;
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
     public List<ActionDto> getActions() {
         return actions;

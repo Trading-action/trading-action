@@ -12,7 +12,7 @@ public interface ActionnaireInfra extends AbstractInfra {
 
     int deleteByReference(String reference);
 
-    int save(ActionnaireEntity actionnaireEntity);
+    int save(Actionnaire actionnaire);
 
     int update(ActionnaireEntity actionnaireEntity);
 
