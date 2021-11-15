@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CompteDao extends JpaRepository<CompteEntity,Long> {
-    CompteEntity findByReference(String reference);
-    int deleteByReference(String reference);
+    CompteEntity findByRef(String ref);
+    int deleteByRef(String ref);
 }

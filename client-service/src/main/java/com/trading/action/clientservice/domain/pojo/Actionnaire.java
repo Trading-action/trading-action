@@ -6,12 +6,21 @@ import java.util.List;
 
 public class Actionnaire {
     private Long id;
+    private String username;
     private  String ref;
     private  Instant createdAt;
     private Instant updatedAt;
     private  List<Action> actions;
     private List<Transaction> transactions;
     private Compte compte;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
     public List<Action> getActions() {
         return actions;

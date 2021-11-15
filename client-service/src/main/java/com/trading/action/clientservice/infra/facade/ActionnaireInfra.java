@@ -8,11 +8,11 @@ import java.util.List;
 
 public interface ActionnaireInfra extends AbstractInfra {
 
-    Actionnaire findByReference(String reference);
+    Actionnaire findByRef(String ref);
 
-    int deleteByReference(String reference);
+    int deleteByRef(String ref);
 
-    int save(ActionnaireEntity actionnaireEntity);
+    int save(Actionnaire actionnaire);
 
     int update(ActionnaireEntity actionnaireEntity);
 

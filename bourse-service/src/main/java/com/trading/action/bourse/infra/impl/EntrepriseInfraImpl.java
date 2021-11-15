@@ -8,7 +8,6 @@ import com.trading.action.bourse.infra.facade.EntrepriseInfra;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -33,13 +32,15 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
     }
 
     @Override
-    public int save(EntrepriseEntity entrepriseEntity) {
-        if (findByReference(entrepriseEntity.getReference()) != null) {
-            return -1;
+    public int save(Entreprise entreprise) {
+        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getRef());
+        if(entrepriseEntity!=null){
+            entrepriseDao.save(entrepriseEntity);
+            return 1;
         }
-        entrepriseDao.save(entrepriseEntity);
-        return 1;
-    }
+        return -1;
+    };
+
 
     @Override
     public int update(EntrepriseEntity entrepriseEntity) {
@@ -54,7 +55,11 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
 
     @Override
     public int update(Entreprise entreprise) {
-        EntrepriseEntity
-        return 0;
+        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getRef());
+        if(entrepriseEntity!=null){
+            entrepriseDao.save(entrepriseEntity);
+            return 1;
+        }
+        return -1;
     }
 }

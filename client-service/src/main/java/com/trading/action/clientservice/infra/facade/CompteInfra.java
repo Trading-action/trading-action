@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface CompteInfra extends AbstractInfra {
 
-    Compte findByReference(String reference);
+    Compte findByRef(String ref);
 
-    int deleteByReference(String reference);
+    int deleteByRef(String ref);
 
     int save(CompteEntity compteEntity);
 

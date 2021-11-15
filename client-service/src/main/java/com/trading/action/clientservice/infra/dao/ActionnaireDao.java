@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ActionnaireDao extends JpaRepository<ActionnaireEntity,Long> {
-    ActionnaireEntity findByReference(String reference);
-    int deleteByReference(String reference);
+    ActionnaireEntity findByRef(String ref);
+    int deleteByRef(String ref);
 }

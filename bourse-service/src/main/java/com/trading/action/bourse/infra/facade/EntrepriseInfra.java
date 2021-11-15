@@ -11,7 +11,7 @@ public interface EntrepriseInfra extends AbstractInfra {
 
     int deleteByReference(String reference);
 
-    int save(EntrepriseEntity entrepriseEntity);
+    int save(Entreprise entreprise);
 
     int update(EntrepriseEntity entrepriseEntity);
 

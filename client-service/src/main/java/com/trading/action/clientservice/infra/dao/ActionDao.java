@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ActionDao extends JpaRepository<ActionEntity,Long> {
-    ActionEntity findByReference(String reference);
-    int deleteByReference(String reference);
+    ActionEntity findByRef(String ref);
+    int deleteByRef(String ref);
 }
