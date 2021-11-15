@@ -17,9 +17,10 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
     @Autowired
     private ActionnaireDao actionnaireDao;
 
+
     @Override
-    public Actionnaire findByReference(String reference) {
-        ActionnaireEntity actionnaireEntity = actionnaireDao.findByReference(reference);
+    public Actionnaire findByRef(String ref) {
+        ActionnaireEntity actionnaireEntity = actionnaireDao.findByRef(ref);
         Actionnaire actionnaire = new Actionnaire();
         if (actionnaireEntity != null) {
             BeanUtils.copyProperties(actionnaireEntity, actionnaire);
@@ -27,9 +28,10 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
         return actionnaire;
     }
 
+
     @Override
-    public int deleteByReference(String reference) {
-        return actionnaireDao.deleteByReference(reference);
+    public int deleteByRef(String ref) {
+        return actionnaireDao.deleteByRef(ref);
     }
 
 
@@ -38,7 +40,7 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
     public int save(Actionnaire actionnaire) {
         ActionnaireEntity actionnaireEntity = new ActionnaireEntity();
         BeanUtils.copyProperties(actionnaire, actionnaireEntity);
-        if (findByReference(actionnaireEntity.getRef()) != null) {
+        if (findByRef(actionnaireEntity.getRef()) != null) {
             return -1;
         }
         actionnaireDao.save(actionnaireEntity);
@@ -47,7 +49,7 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
 
     @Override
     public int update(ActionnaireEntity actionnaireEntity) {
-        if (findByReference(actionnaireEntity.getRef()) == null)
+        if (findByRef(actionnaireEntity.getRef()) == null)
             return -1;
         actionnaireDao.save(actionnaireEntity);
         return 1;

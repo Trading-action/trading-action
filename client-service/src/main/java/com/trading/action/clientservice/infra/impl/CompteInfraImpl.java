@@ -20,14 +20,16 @@ public class CompteInfraImpl extends AbstractInfraImpl implements CompteInfra {
 
     @Autowired
     private CompteDao compteDao;
+
+
     @Override
-    public Compte findByReference(String reference) {
-       return  null;
+    public Compte findByRef(String ref) {
+        return null;
     }
 
     @Override
-    public int deleteByReference(String reference) {
-        return compteDao.deleteByReference(reference);
+    public int deleteByRef(String ref) {
+        return 0;
     }
 
     @Override
@@ -49,5 +51,4 @@ public class CompteInfraImpl extends AbstractInfraImpl implements CompteInfra {
     public int update(Compte Compte) {
         return 0;
     }
-
 }

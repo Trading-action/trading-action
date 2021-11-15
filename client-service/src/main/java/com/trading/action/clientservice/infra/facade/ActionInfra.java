@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface ActionInfra extends AbstractInfra {
 
-    Action findByReference(String reference);
+    Action findByRef(String ref);
 
-    int deleteByReference(String reference);
+    int deleteByRef(String ref);
 
     int save(ActionEntity actionEntity);
 

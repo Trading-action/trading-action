@@ -19,8 +19,10 @@ public class ActionnaireCreateProcessImpl extends AbstractProcessImpl<Actionnair
 
     @Override
     public void validate(ActionnaireCreatenput actionnaireCreatenput, Result result) {
-            String username = actionnaireCreatenput.getActionnaire().getUsername();
-             Actionnaire actionnaire = actionnaireInfra.findByReference(username);
+            String username = actionnaireCreatenput.
+                    getActionnaire()
+                    .getUsername();
+             Actionnaire actionnaire = actionnaireInfra.findByRef(username);
             if(actionnaire==null){
                 result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.not_founded"));
             }

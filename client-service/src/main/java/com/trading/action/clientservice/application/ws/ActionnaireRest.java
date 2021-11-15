@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public class ActionnaireRest {
 
     @ApiOperation("save process ")
-    @PutMapping("/")
+    @PostMapping("/")
     public Result save(@RequestBody ActionnaireDto actionnaireDto) {
         ActionnaireCreatenput actionnaireCreatenput = ActionnaireDto.toActionnaireCreatenput(actionnaireDto);
         return actionnaireCreateProcess.execute(actionnaireCreatenput);

@@ -1,6 +1,6 @@
 package com.trading.action.clientservice.infra.core;
 
-import com.irisi.trading.infra.core.messaging.LocalMessageReader;
+import com.trading.action.clientservice.infra.core.messaging.LocalMessageReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

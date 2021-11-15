@@ -21,8 +21,8 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
     @Autowired
     private ActionDao actionDao;
     @Override
-    public Action findByReference(String reference) {
-        ActionEntity actionEntity = actionDao.findByReference(reference);
+    public Action findByRef(String ref) {
+        ActionEntity actionEntity = actionDao.findByRef(ref);
         Action action= new Action();
         if(actionEntity!=null){
             BeanUtils.copyProperties(actionEntity,action);
@@ -31,13 +31,13 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
     }
 
     @Override
-    public int deleteByReference(String reference) {
-        return actionDao.deleteByReference(reference);
+    public int deleteByRef(String ref) {
+        return actionDao.deleteByRef(ref);
     }
 
     @Override
     public int save(ActionEntity actionEntity) {
-        if (findByReference(actionEntity.getRef()) != null) {
+        if (findByRef(actionEntity.getRef()) != null) {
             return -1;
         }
         actionDao.save(actionEntity);
@@ -46,7 +46,7 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
 
     @Override
     public int update(ActionEntity actionEntity) {
-        if (findByReference(actionEntity.getRef()) == null)
+        if (findByRef(actionEntity.getRef()) == null)
             return -1;
         actionDao.save(actionEntity);
         return 1;
