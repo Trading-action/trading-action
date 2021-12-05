@@ -33,7 +33,7 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
 
     @Override
     public int save(Entreprise entreprise) {
-        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getRef());
+        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getReference());
         if(entrepriseEntity!=null){
             entrepriseDao.save(entrepriseEntity);
             return 1;
@@ -55,7 +55,7 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
 
     @Override
     public int update(Entreprise entreprise) {
-        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getRef());
+        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getReference());
         if(entrepriseEntity!=null){
             entrepriseDao.save(entrepriseEntity);
             return 1;

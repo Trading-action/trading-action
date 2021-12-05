@@ -1,11 +1,19 @@
-package com.trading.action.bourse.domain.pojo;
+package com.trading.action.bourse.application.dto;
+
+import com.trading.action.bourse.domain.entreprise.create.EntrepriseCreateInput;
+import com.trading.action.bourse.domain.pojo.Action;
+import com.trading.action.bourse.domain.pojo.Compte;
+import com.trading.action.bourse.domain.pojo.Transaction;
+import org.springframework.beans.BeanUtils;
 
 import java.math.BigDecimal;
 import java.time.Instant;
-public class Entreprise {
+import java.util.List;
+
+public class EntrepriseDto {
     private Long id;
-    private String reference;
-    private Instant createdAt;
+    private  String reference;
+    private  Instant createdAt;
     private Instant updatedAt;
     private String libelle;
     private String adress;
@@ -13,10 +21,10 @@ public class Entreprise {
     private BigDecimal nombreAction;
     private BigDecimal dividende;
 
-    public Entreprise() {
+    public EntrepriseDto() {
     }
 
-    public Entreprise(String reference, String libelle, String adress, BigDecimal prixAction, BigDecimal nombreAction, BigDecimal dividende) {
+    public EntrepriseDto(String reference, String libelle, String adress, BigDecimal prixAction, BigDecimal nombreAction, BigDecimal dividende) {
         this.reference = reference;
         this.libelle = libelle;
         this.adress = adress;
@@ -95,5 +103,26 @@ public class Entreprise {
 
     public void setDividende(BigDecimal dividende) {
         this.dividende = dividende;
+    }
+
+    @Override
+    public String toString() {
+        return "EntrepriseDto{" +
+                "id=" + id +
+                ", reference='" + reference + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", libelle='" + libelle + '\'' +
+                ", adress='" + adress + '\'' +
+                ", prixAction=" + prixAction +
+                ", nombreAction=" + nombreAction +
+                ", dividende=" + dividende +
+                '}';
+    }
+
+    public static EntrepriseCreateInput toEntrepriseCreateInput(EntrepriseDto entrepriseDto){
+        EntrepriseCreateInput entrepriseCreateInput = new EntrepriseCreateInput();
+        if(entrepriseCreateInput != null) BeanUtils.copyProperties(entrepriseDto, entrepriseCreateInput);
+        return entrepriseCreateInput;
     }
 }

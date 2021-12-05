@@ -14,8 +14,9 @@ public class EntrepriseCreateProcessImpl extends AbstractProcessImpl<EntrepriseC
     
     @Override
     public void validate(EntrepriseCreateInput entrepriseCreateInput, Result result) {
-        String reference = entrepriseCreateInput.getEntreprise().getRef();
-        Entreprise Entreprise = entrepriseInfra.findByReference(reference);
+//        String reference = entrepriseCreateInput.getEntreprise().getReference();
+        System.out.println(entrepriseCreateInput.getEntreprise().getLibelle() +  " \n result "+ result.getMessage());
+        Entreprise Entreprise = entrepriseInfra.findByReference(entrepriseCreateInput.getEntreprise().getReference());
         if(Entreprise==null){
             result.addErrorMessage(entrepriseInfra.getMessage("Entreprise.not_founded"));
         }

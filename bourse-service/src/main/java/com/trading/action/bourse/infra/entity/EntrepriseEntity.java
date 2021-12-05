@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.Instant;
+import java.util.List;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
@@ -18,7 +18,10 @@ import java.time.Instant;
 public class EntrepriseEntity extends AbstractEntity {
     String libelle;
     String adress;
-    BigDecimal prixAction;
     BigDecimal nombreAction;
     BigDecimal dividende;
+    @OneToOne
+    PriceEntity prixActuel;
+    @OneToMany(mappedBy = "entreprise")
+    private List<PriceEntity> prixHistorique;
 }

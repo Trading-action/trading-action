@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EntrepriseDao extends JpaRepository<EntrepriseEntity, Long> {
-    public EntrepriseEntity findByReference(String reference);
+    EntrepriseEntity findByReference(String reference);
     int deleteByReference(String reference);
 }
