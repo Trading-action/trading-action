@@ -1,6 +1,7 @@
 package com.trading.action.bourse.infra.impl;
 
 import com.trading.action.bourse.domain.pojo.Entreprise;
+import com.trading.action.bourse.domain.pojo.Price;
 import com.trading.action.bourse.infra.core.AbstractInfraImpl;
 import com.trading.action.bourse.infra.dao.PriceDao;
 import com.trading.action.bourse.infra.entity.PriceEntity;
@@ -34,13 +35,10 @@ public class PriceInfraImpl extends AbstractInfraImpl implements PriceInfra {
     }
 
     @Override
-    public int save(Entreprise entreprise) {
-        PriceEntity priceEntity = priceDao.findByReference(entreprise.getReference());
-        if(priceEntity!=null){
-            priceDao.save(priceEntity);
-            return 1;
-        }
-        return -1;
+    public void save(Price price) {
+        PriceEntity priceEntity= new PriceEntity();
+        BeanUtils.copyProperties(price,priceEntity);
+        priceDao.save(priceEntity);
     };
 
 
@@ -56,12 +54,9 @@ public class PriceInfraImpl extends AbstractInfraImpl implements PriceInfra {
     }
 
     @Override
-    public int update(Entreprise entreprise) {
-        PriceEntity priceEntity = priceDao.findByReference(entreprise.getReference());
-        if(priceEntity!=null){
-            priceDao.save(priceEntity);
-            return 1;
-        }
-        return -1;
+    public void updatePojo(Price price) {
+        PriceEntity priceEntity = new PriceEntity();
+        BeanUtils.copyProperties(price,priceEntity);
+        priceDao.save(priceEntity);
     }
 }

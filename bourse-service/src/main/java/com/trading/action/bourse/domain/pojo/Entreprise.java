@@ -9,14 +9,14 @@ public class Entreprise {
     private Instant updatedAt;
     private String libelle;
     private String adress;
-    private BigDecimal prixAction;
+    private Price prixAction;
     private BigDecimal nombreAction;
     private BigDecimal dividende;
 
     public Entreprise() {
     }
 
-    public Entreprise(String reference, String libelle, String adress, BigDecimal prixAction, BigDecimal nombreAction, BigDecimal dividende) {
+    public Entreprise(String reference, String libelle, String adress, Price prixAction, BigDecimal nombreAction, BigDecimal dividende) {
         this.reference = reference;
         this.libelle = libelle;
         this.adress = adress;
@@ -73,11 +73,11 @@ public class Entreprise {
         this.adress = adress;
     }
 
-    public BigDecimal getPrixAction() {
+    public Price getPrixAction() {
         return prixAction;
     }
 
-    public void setPrixAction(BigDecimal prixAction) {
+    public void setPrixAction(Price prixAction) {
         this.prixAction = prixAction;
     }
 

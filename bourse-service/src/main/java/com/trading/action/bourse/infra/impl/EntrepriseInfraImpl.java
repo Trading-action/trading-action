@@ -22,8 +22,9 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
         Entreprise action= new Entreprise();
         if(actionEntity!=null){
             BeanUtils.copyProperties(actionEntity,action);
+            return action;
         }
-        return action;
+       return null;
     }
 
     @Override
@@ -32,13 +33,10 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
     }
 
     @Override
-    public int save(Entreprise entreprise) {
-        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(entreprise.getReference());
-        if(entrepriseEntity!=null){
-            entrepriseDao.save(entrepriseEntity);
-            return 1;
-        }
-        return -1;
+    public void save(Entreprise entreprise) {
+        EntrepriseEntity entrepriseEntity = new EntrepriseEntity();
+        BeanUtils.copyProperties(entreprise,entrepriseEntity);
+        entrepriseDao.save(entrepriseEntity);
     };
 
 

@@ -3,7 +3,12 @@ package com.trading.action.bourse.domain.entreprise.create;
 import com.trading.action.bourse.domain.core.AbstractProcessImpl;
 import com.trading.action.bourse.domain.core.Result;
 import com.trading.action.bourse.domain.pojo.Entreprise;
+import com.trading.action.bourse.domain.pojo.Price;
 import com.trading.action.bourse.infra.facade.EntrepriseInfra;
+import com.trading.action.bourse.infra.facade.PriceInfra;
+
+import java.util.Date;
+import java.util.logging.Logger;
 
 public class EntrepriseCreateProcessImpl extends AbstractProcessImpl<EntrepriseCreateInput> implements EntrepriseCreateProcess{
 
@@ -14,18 +19,22 @@ public class EntrepriseCreateProcessImpl extends AbstractProcessImpl<EntrepriseC
     
     @Override
     public void validate(EntrepriseCreateInput entrepriseCreateInput, Result result) {
-//        String reference = entrepriseCreateInput.getEntreprise().getReference();
-        System.out.println(entrepriseCreateInput.getEntreprise().getLibelle() +  " \n result "+ result.getMessage());
-        Entreprise Entreprise = entrepriseInfra.findByReference(entrepriseCreateInput.getEntreprise().getReference());
-        if(Entreprise==null){
-            result.addErrorMessage(entrepriseInfra.getMessage("Entreprise.not_founded"));
+        Entreprise entreprise = entrepriseInfra.findByReference(entrepriseCreateInput.getReference());
+        if(entreprise != null){
+            result.addErrorMessage(entrepriseInfra.getMessage("entreprise.libelle.duplicated"));
         }
     }
 
     @Override
     public void run(EntrepriseCreateInput entrepriseCreateInput, Result result) {
-        entrepriseInfra.save(entrepriseCreateInput.getEntreprise());
-        result.addInfoMessage(entrepriseInfra.getMessage("Entreprise.created"));
+        Entreprise entreprise = new Entreprise();
+        entreprise.setAdress(entrepriseCreateInput.getAdress());
+        entreprise.setDividende(entrepriseCreateInput.getDividende());
+        entreprise.setNombreAction(entrepriseCreateInput.getNombreAction());
+        entreprise.setReference(entrepriseCreateInput.getReference());
+        entreprise.setLibelle(entrepriseCreateInput.getLibelle());
+        entrepriseInfra.save(entreprise);
+        result.addInfoMessage(entrepriseInfra.getMessage("entreprise.created"));
     }
 
 }

@@ -1,6 +1,7 @@
 package com.trading.action.bourse.infra.facade;
 
 import com.trading.action.bourse.domain.pojo.Entreprise;
+import com.trading.action.bourse.domain.pojo.Price;
 import com.trading.action.bourse.infra.core.AbstractInfra;
 import com.trading.action.bourse.infra.entity.PriceEntity;
 
@@ -13,11 +14,11 @@ public interface PriceInfra extends AbstractInfra {
 
     int deleteByReference(String reference);
 
-    int save(Entreprise entreprise);
+    void save(Price price);
 
     int update(PriceEntity priceEntity);
 
     List<PriceEntity> findAll();
 
-    int update(Entreprise entreprise);
+    void updatePojo(Price price);
 }

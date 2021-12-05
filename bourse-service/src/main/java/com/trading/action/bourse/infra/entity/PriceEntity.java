@@ -16,7 +16,6 @@ import java.math.BigDecimal;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 public class PriceEntity extends AbstractEntity {
-    String reference;
     @ManyToOne
     EntrepriseEntity entreprise;
     BigDecimal prix;

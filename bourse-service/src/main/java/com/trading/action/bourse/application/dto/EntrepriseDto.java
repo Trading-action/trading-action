@@ -11,10 +11,7 @@ import java.time.Instant;
 import java.util.List;
 
 public class EntrepriseDto {
-    private Long id;
-    private  String reference;
-    private  Instant createdAt;
-    private Instant updatedAt;
+    private String reference;
     private String libelle;
     private String adress;
     private BigDecimal prixAction;
@@ -33,36 +30,12 @@ public class EntrepriseDto {
         this.dividende = dividende;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getReference() {
         return reference;
     }
 
     public void setReference(String reference) {
         this.reference = reference;
-    }
-
-    public Instant getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
     }
 
     public String getLibelle() {
@@ -108,10 +81,7 @@ public class EntrepriseDto {
     @Override
     public String toString() {
         return "EntrepriseDto{" +
-                "id=" + id +
                 ", reference='" + reference + '\'' +
-                ", createdAt=" + createdAt +
-                ", updatedAt=" + updatedAt +
                 ", libelle='" + libelle + '\'' +
                 ", adress='" + adress + '\'' +
                 ", prixAction=" + prixAction +

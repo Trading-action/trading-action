@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -21,6 +22,7 @@ public class EntrepriseEntity extends AbstractEntity {
     BigDecimal nombreAction;
     BigDecimal dividende;
     @OneToOne
+    @Nullable
     PriceEntity prixActuel;
     @OneToMany(mappedBy = "entreprise")
     private List<PriceEntity> prixHistorique;
