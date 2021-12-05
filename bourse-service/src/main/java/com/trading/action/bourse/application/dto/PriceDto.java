@@ -1,14 +1,12 @@
-package com.trading.action.bourse.domain.price.change;
-
-import com.trading.action.bourse.domain.core.AbstractProcessInput;
+package com.trading.action.bourse.application.dto;
 
 import java.math.BigDecimal;
 
-public class PriceChangeInput extends AbstractProcessInput {
+public class PriceDto {
     private BigDecimal prix;
     private String referenceEntreprise;
 
-    public PriceChangeInput() {
+    public PriceDto() {
     }
 
     public BigDecimal getPrix() {

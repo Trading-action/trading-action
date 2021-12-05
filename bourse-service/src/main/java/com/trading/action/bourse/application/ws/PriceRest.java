@@ -1,15 +1,17 @@
 package com.trading.action.bourse.application.ws;
 
+import com.trading.action.bourse.application.dto.PriceDto;
+import com.trading.action.bourse.domain.core.Result;
 import com.trading.action.bourse.domain.pojo.Price;
+import com.trading.action.bourse.domain.price.change.PriceChangeInput;
+import com.trading.action.bourse.domain.price.change.PriceChangeProcess;
 import com.trading.action.bourse.infra.entity.PriceEntity;
 import com.trading.action.bourse.infra.facade.PriceInfra;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,6 +21,9 @@ import java.util.List;
 public class PriceRest {
     @Autowired
     PriceInfra priceInfra;
+
+    @Autowired
+    PriceChangeProcess priceChangeProcess;
 
     @ApiOperation("find history prices by entreprise libelle")
     @GetMapping("/entreprise/{libelle}")
@@ -30,5 +35,13 @@ public class PriceRest {
     @GetMapping("/")
     public List<PriceEntity> findAll() {
         return priceInfra.findAll();
+    }
+
+    @ApiOperation("change a price for a company share")
+    @PostMapping("/")
+    public Result create(@RequestBody PriceDto priceDto) {
+        PriceChangeInput priceChangeInput = new PriceChangeInput();
+        BeanUtils.copyProperties(priceDto,priceChangeInput);
+        return priceChangeProcess.execute(priceChangeInput);
     }
 }

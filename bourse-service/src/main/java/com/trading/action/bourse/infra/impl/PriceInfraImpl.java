@@ -4,6 +4,7 @@ import com.trading.action.bourse.domain.pojo.Entreprise;
 import com.trading.action.bourse.domain.pojo.Price;
 import com.trading.action.bourse.infra.core.AbstractInfraImpl;
 import com.trading.action.bourse.infra.dao.PriceDao;
+import com.trading.action.bourse.infra.entity.EntrepriseEntity;
 import com.trading.action.bourse.infra.entity.PriceEntity;
 import com.trading.action.bourse.infra.facade.PriceInfra;
 import org.springframework.beans.BeanUtils;
@@ -37,7 +38,10 @@ public class PriceInfraImpl extends AbstractInfraImpl implements PriceInfra {
     @Override
     public void save(Price price) {
         PriceEntity priceEntity= new PriceEntity();
+        EntrepriseEntity entrepriseEntity = new EntrepriseEntity();
         BeanUtils.copyProperties(price,priceEntity);
+        BeanUtils.copyProperties(price.getEntreprise(),entrepriseEntity);
+        priceEntity.setEntreprise(entrepriseEntity);
         priceDao.save(priceEntity);
     };
 

@@ -18,11 +18,11 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
 
     @Override
     public Entreprise findByReference(String reference) {
-        EntrepriseEntity actionEntity = entrepriseDao.findByReference(reference);
-        Entreprise action= new Entreprise();
-        if(actionEntity!=null){
-            BeanUtils.copyProperties(actionEntity,action);
-            return action;
+        EntrepriseEntity entrepriseEntity = entrepriseDao.findByReference(reference);
+        Entreprise entreprise= new Entreprise();
+        if(entrepriseEntity!=null){
+            BeanUtils.copyProperties(entrepriseEntity,entreprise);
+            return entreprise;
         }
        return null;
     }

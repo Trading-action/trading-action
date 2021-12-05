@@ -1,5 +1,6 @@
 package com.trading.action.bourse.infra.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,7 @@ import java.math.BigDecimal;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 public class PriceEntity extends AbstractEntity {
+    @JsonIgnore
     @ManyToOne
     EntrepriseEntity entreprise;
     BigDecimal prix;
