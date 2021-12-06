@@ -1,24 +1,24 @@
 package com.trading.action.clientservice.domain.pojo;
 
 
+import java.math.BigDecimal;
 import java.time.Instant;
 
 public class Action {
-
-    private Long id;
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
-    private Actionnaire actionnaire;
     private boolean inBourse;
     private String refEntreprise;
+    private BigDecimal prix;
 
-    public Long getId() {
-        return id;
+
+    public BigDecimal getPrix() {
+        return prix;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPrix(BigDecimal prix) {
+        this.prix = prix;
     }
 
     public String getRef() {
@@ -43,14 +43,6 @@ public class Action {
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
-    }
-
-    public Actionnaire getActionnaire() {
-        return actionnaire;
-    }
-
-    public void setActionnaire(Actionnaire actionnaire) {
-        this.actionnaire = actionnaire;
     }
 
     public boolean isInBourse() {

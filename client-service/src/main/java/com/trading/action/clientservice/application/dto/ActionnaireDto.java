@@ -1,21 +1,20 @@
 package com.trading.action.clientservice.application.dto;
 
 
-import com.trading.action.clientservice.domain.actionnaire.create.ActionnaireCreatenput;
-import org.springframework.beans.BeanUtils;
-
-import java.time.Instant;
-import java.util.List;
+import com.trading.action.clientservice.domain.actionnaire.create.ActionnaireCreateInput;
 
 public class ActionnaireDto {
-    private Long id;
     private String ref;
-    private Instant createdAt;
-    private Instant updatedAt;
-    private List<ActionDto> actions;
-    private List<TransactionDto> transactions;
-    private CompteDto compte;
+    private String refCompte;
     private String username;
+
+    public String getRefCompte() {
+        return refCompte;
+    }
+
+    public void setRefCompte(String refCompte) {
+        this.refCompte = refCompte;
+    }
 
     public String getUsername() {
         return username;
@@ -25,29 +24,6 @@ public class ActionnaireDto {
         this.username = username;
     }
 
-    public List<ActionDto> getActions() {
-        return actions;
-    }
-
-    public void setActions(List<ActionDto> actions) {
-        this.actions = actions;
-    }
-
-    public CompteDto getCompte() {
-        return compte;
-    }
-
-    public void setCompte(CompteDto compte) {
-        this.compte = compte;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getRef() {
         return ref;
@@ -57,34 +33,14 @@ public class ActionnaireDto {
         this.ref = ref;
     }
 
-    public Instant getCreatedAt() {
-        return createdAt;
-    }
 
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
 
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
 
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public List<TransactionDto> getTransactions() {
-        return transactions;
-    }
-
-    public void setTransactions(List<TransactionDto> transactions) {
-        this.transactions = transactions;
-    }
-
-    public static ActionnaireCreatenput toActionnaireCreatenput(ActionnaireDto actionnaireDto) {
-        ActionnaireCreatenput actionnaireCreatenput = new ActionnaireCreatenput();
-        if (actionnaireDto != null)
-            BeanUtils.copyProperties(actionnaireDto, actionnaireCreatenput);
+    public static ActionnaireCreateInput toActionnaireCreatenput(ActionnaireDto actionnaireDto) {
+        ActionnaireCreateInput actionnaireCreatenput = new ActionnaireCreateInput();
+        actionnaireCreatenput.setRef(actionnaireDto.getRef());
+        actionnaireCreatenput.setUsername(actionnaireDto.getUsername());
+        actionnaireCreatenput.setRefCompte(actionnaireDto.getRefCompte());
         return actionnaireCreatenput;
     }
 

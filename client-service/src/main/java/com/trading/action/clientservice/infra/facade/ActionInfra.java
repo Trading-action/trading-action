@@ -21,4 +21,7 @@ public interface ActionInfra extends AbstractInfra {
     List<ActionEntity> findAll();
 
     int update(Action action);
+
+    List<Action> findByActionnaireUsername(String username);
+
 }

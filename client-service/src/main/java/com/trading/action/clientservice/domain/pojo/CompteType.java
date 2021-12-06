@@ -15,9 +15,18 @@ import java.util.List;
 public class CompteType {
    private Long id;
     private String ref;
+    private String libelle;
     private Instant createdAt;
     private Instant updatedAt;
     private List<Compte> comptes;
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
 
     public Long getId() {
         return id;

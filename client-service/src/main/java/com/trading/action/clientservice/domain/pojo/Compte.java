@@ -9,8 +9,8 @@ public class Compte {
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
-    private CompteType typeCompte;
-    private Actionnaire actionnaire;
+    private String refTypeCompte;
+    private String refActionnaire;
 
     public Long getId() {
         return id;
@@ -44,19 +44,19 @@ public class Compte {
         this.updatedAt = updatedAt;
     }
 
-    public CompteType getTypeCompte() {
-        return typeCompte;
+    public String getRefTypeCompte() {
+        return refTypeCompte;
     }
 
-    public void setTypeCompte(CompteType typeCompte) {
-        this.typeCompte = typeCompte;
+    public void setRefTypeCompte(String refTypeCompte) {
+        this.refTypeCompte = refTypeCompte;
     }
 
-    public Actionnaire getActionnaire() {
-        return actionnaire;
+    public String getRefActionnaire() {
+        return refActionnaire;
     }
 
-    public void setActionnaire(Actionnaire actionnaire) {
-        this.actionnaire = actionnaire;
+    public void setRefActionnaire(String refActionnaire) {
+        this.refActionnaire = refActionnaire;
     }
 }

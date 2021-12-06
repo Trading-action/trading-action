@@ -4,35 +4,45 @@ package com.trading.action.clientservice.domain.actionnaire.create;
 import com.trading.action.clientservice.domain.core.AbstractProcessImpl;
 import com.trading.action.clientservice.domain.core.Result;
 import com.trading.action.clientservice.domain.pojo.Actionnaire;
+import com.trading.action.clientservice.domain.pojo.Compte;
 import com.trading.action.clientservice.infra.facade.ActionnaireInfra;
+import com.trading.action.clientservice.infra.facade.CompteInfra;
 
-public class ActionnaireCreateProcessImpl extends AbstractProcessImpl<ActionnaireCreatenput> implements ActionnaireCreateProcess {
-
-
-
-    public ActionnaireCreateProcessImpl(ActionnaireInfra actionnaireInfra){
-        this.actionnaireInfra = actionnaireInfra;
-    }
-
+public class ActionnaireCreateProcessImpl extends AbstractProcessImpl<ActionnaireCreateInput> implements ActionnaireCreateProcess {
 
     private ActionnaireInfra actionnaireInfra;
+    private CompteInfra compteInfra;
+
+    public ActionnaireCreateProcessImpl(ActionnaireInfra actionnaireInfra, CompteInfra compteInfra) {
+        this.actionnaireInfra = actionnaireInfra;
+        this.compteInfra =compteInfra;
+    }
+
+
 
     @Override
-    public void validate(ActionnaireCreatenput actionnaireCreatenput, Result result) {
-            String username = actionnaireCreatenput.
-                    getActionnaire()
-                    .getUsername();
-             Actionnaire actionnaire = actionnaireInfra.findByRef(username);
-            if(actionnaire==null){
-                result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.not_founded"));
-            }
+    public void validate(ActionnaireCreateInput actionnaireCreatenput, Result result) {
+        String ref = actionnaireCreatenput
+                .getRef();
+        Actionnaire actionnaire = actionnaireInfra.findByRef(ref);
 
+        Compte  compte =  compteInfra.findByRef(actionnaireCreatenput.getRefCompte());
+        if (actionnaire != null) {
+            result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.already_exists"));
+        }
+
+        if (compte == null) {
+            result.addErrorMessage(actionnaireInfra.getMessage("compte.not_found"));
+        }
     }
 
     @Override
-    public void run(ActionnaireCreatenput actionnaireCreatenput, Result result) {
-
-        actionnaireInfra.save(actionnaireCreatenput.getActionnaire());
+    public void run(ActionnaireCreateInput actionnaireCreatenput, Result result) {
+        Actionnaire actionnaire = new Actionnaire();
+        actionnaire.setRef(actionnaireCreatenput.getRef());
+        actionnaire.setUsername(actionnaireCreatenput.getUsername());
+        actionnaire.setRefCompte(actionnaireCreatenput.getRefCompte());
+        actionnaireInfra.save(actionnaire);
         result.addInfoMessage(actionnaireInfra.getMessage("actionnaire.created"));
     }
 }

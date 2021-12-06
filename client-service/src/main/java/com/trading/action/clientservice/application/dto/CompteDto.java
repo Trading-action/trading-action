@@ -1,22 +1,11 @@
 package com.trading.action.clientservice.application.dto;
 
-import java.time.Instant;
+
+import com.trading.action.clientservice.domain.compte.create.CompteCreateInput;
 
 public class CompteDto {
-    private Long id;
     private String ref;
-    private Instant createdAt;
-    private Instant updatedAt;
-    private CompteTypeDto typeCompte;
-    private ActionnaireDto actionnaire;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String refTypeCompte;
 
     public String getRef() {
         return ref;
@@ -26,35 +15,21 @@ public class CompteDto {
         this.ref = ref;
     }
 
-    public Instant getCreatedAt() {
-        return createdAt;
+    public String getRefTypeCompte() {
+        return refTypeCompte;
     }
 
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
+    public void setRefTypeCompte(String refTypeCompte) {
+        this.refTypeCompte = refTypeCompte;
     }
 
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
 
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
-    }
 
-    public CompteTypeDto getTypeCompte() {
-        return typeCompte;
-    }
+   public static CompteCreateInput toCompteCreatenput(CompteDto compteDto) {
+       CompteCreateInput compteCreatenput = new CompteCreateInput();
+       compteCreatenput.setRef(compteDto.getRef());
+       compteCreatenput.setRefCompteType(compteDto.getRefTypeCompte());
 
-    public void setTypeCompte(CompteTypeDto typeCompte) {
-        this.typeCompte = typeCompte;
-    }
-
-    public ActionnaireDto getActionnaire() {
-        return actionnaire;
-    }
-
-    public void setActionnaire(ActionnaireDto actionnaire) {
-        this.actionnaire = actionnaire;
+        return compteCreatenput;
     }
 }

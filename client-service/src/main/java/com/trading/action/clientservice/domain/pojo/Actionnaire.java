@@ -1,18 +1,11 @@
 package com.trading.action.clientservice.domain.pojo;
 
 
-import java.time.Instant;
-import java.util.List;
 
 public class Actionnaire {
-    private Long id;
     private String username;
     private  String ref;
-    private  Instant createdAt;
-    private Instant updatedAt;
-    private  List<Action> actions;
-    private List<Transaction> transactions;
-    private Compte compte;
+    private String  refCompte;
 
     public String getUsername() {
         return username;
@@ -20,30 +13,6 @@ public class Actionnaire {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public List<Action> getActions() {
-        return actions;
-    }
-
-    public void setActions(List<Action> actions) {
-        this.actions = actions;
-    }
-
-    public Compte getCompte() {
-        return compte;
-    }
-
-    public void setCompte(Compte compte) {
-        this.compte = compte;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getRef() {
@@ -54,27 +23,11 @@ public class Actionnaire {
         this.ref = ref;
     }
 
-    public Instant getCreatedAt() {
-        return createdAt;
+    public String getRefCompte() {
+        return refCompte;
     }
 
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public List<Transaction> getTransactions() {
-        return transactions;
-    }
-
-    public void setTransactions(List<Transaction> transactions) {
-        this.transactions = transactions;
+    public void setRefCompte(String refCompte) {
+        this.refCompte = refCompte;
     }
 }
