@@ -1,45 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="154f5f31-d767-4d42-aaaf-c5b60456bc3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_ar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/pom.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="20vPE2a6EIYQBz9V5BvHEkXhqDF" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="154f5f31-d767-4d42-aaaf-c5b60456bc3b" name="Changes" comment="" />
-      <created>1636921972630</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1636921972630</updated>
-      <workItem from="1636921973897" duration="361000" />
-      <workItem from="1636922357128" duration="212000" />
-      <workItem from="1636922652602" duration="130000" />
-      <workItem from="1638721153027" duration="58000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bourse-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourseservice.BourseServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="client-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.clientservice.ClientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntermediaireServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="intermediaire-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.intermediaireservice.IntermediaireServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
 </project>
