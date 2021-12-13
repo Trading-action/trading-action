@@ -24,7 +24,6 @@ public class PriceHistoryByDateAndEntrepriseProcessImpl extends AbstractProcessI
     @Override
     public void run(PriceHistoryByDateAndEntrepriseInput historyProcessInput, Result result) {
         List<PriceEntity> prices = priceInfra.findPrixHistoryByDateAndEntreprise(historyProcessInput.getDate(),historyProcessInput.getEntrepriseLibelle());
-        result.setInput(priceInfra.hasOlderPrices(historyProcessInput.getEntrepriseLibelle(), historyProcessInput.getDate()));
         result.setOutput(prices);
     }
     private EntrepriseInfra entrepriseInfra;

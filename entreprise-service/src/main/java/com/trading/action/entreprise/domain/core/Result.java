@@ -10,7 +10,6 @@ public class Result<T,K> {
     private List<Message> infos;
     private int status;
     private String message;
-    private T input;
     private K output;
 
 
@@ -18,8 +17,7 @@ public class Result<T,K> {
         this.status = status;
     }
 
-    public Result(T input, K output) {
-        this.input = input;
+    public Result(K output) {
         this.output = output;
     }
 
@@ -91,14 +89,6 @@ public class Result<T,K> {
 
     public void setMessage(String message) {
         this.message = message;
-    }
-
-    public T getInput() {
-        return input;
-    }
-
-    public void setInput(T input) {
-        this.input = input;
     }
 
     public K getOutput() {

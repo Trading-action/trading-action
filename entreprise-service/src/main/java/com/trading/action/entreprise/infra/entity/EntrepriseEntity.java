@@ -8,6 +8,7 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.lang.Nullable;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import java.math.BigDecimal;
@@ -28,4 +29,7 @@ public class EntrepriseEntity extends AbstractEntity {
     PriceEntity prixActuel;
     @OneToMany(mappedBy = "entreprise")
     private List<PriceEntity> prixHistorique;
+    @ManyToOne
+    @Nullable
+    private SecteurEntity secteur;
 }

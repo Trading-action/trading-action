@@ -21,7 +21,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("price")
-@Tag(name = "price", description = "Cette classe permet de visualiser les prix de marché des actions d'une entreprise donnée")
+@Tag(name = "price", description = "Ce service permet de visualiser les prix de marché des actions d'une entreprise donnée et aussi l'historique")
 public class PriceRest {
     @Autowired
     PriceInfra priceInfra;
@@ -58,9 +58,4 @@ public class PriceRest {
         BeanUtils.copyProperties(priceHistoryDtoDto,priceHistoryInput);
         return priceHistoryByDateAndEntrepriseProcess.execute(priceHistoryInput);
     }
-//    @Operation(summary = "Price history by instant and company name", description = "Price history for a company")
-//    @PostMapping("/history/")
-//    public List<PriceEntity> priceHistory(@RequestBody PriceHistoryDto priceHistoryDto) {
-//        return priceInfra.findPrixHistoryByDateAndEntreprise(priceHistoryDto.getDate(), priceHistoryDto.getEntrepriseLibelle());
-//    }
 }
