@@ -1,5 +1,7 @@
 package com.trading.action.entreprise.infra.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,6 +24,7 @@ public class SecteurEntity {
     @GeneratedValue
     Long id;
     String libelle;
+    @JsonIgnoreProperties({"id","secteur","adress","prixHistorique","updatesAt","dividende"})
     @OneToMany(mappedBy = "secteur")
     private List<EntrepriseEntity> entreprises;
 }

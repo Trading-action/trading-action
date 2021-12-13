@@ -6,6 +6,7 @@ import com.trading.action.entreprise.infra.core.AbstractInfraImpl;
 import com.trading.action.entreprise.infra.dao.EntrepriseDao;
 import com.trading.action.entreprise.infra.entity.EntrepriseEntity;
 import com.trading.action.entreprise.infra.entity.PriceEntity;
+import com.trading.action.entreprise.infra.entity.SecteurEntity;
 import com.trading.action.entreprise.infra.facade.EntrepriseInfra;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +43,10 @@ public class EntrepriseInfraImpl extends AbstractInfraImpl implements Entreprise
     @Override
     public void save(Entreprise entreprise) {
         EntrepriseEntity entrepriseEntity = new EntrepriseEntity();
+        SecteurEntity secteurEntity = new SecteurEntity();
         BeanUtils.copyProperties(entreprise,entrepriseEntity);
+        BeanUtils.copyProperties(entreprise.getSecteur(),secteurEntity);
+        entrepriseEntity.setSecteur(secteurEntity);
         entrepriseDao.save(entrepriseEntity);
     };
 

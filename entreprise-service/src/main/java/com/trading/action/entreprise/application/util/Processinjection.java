@@ -10,12 +10,12 @@ import com.trading.action.entreprise.infra.facade.EntrepriseInfra;
 import com.trading.action.entreprise.infra.facade.PriceInfra;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+import com.trading.action.secteur.infra.facade.SecteurInfra;
 @Configuration
 public class Processinjection {
     @Bean
-    public EntrepriseCreateProcess entrepriseCreateProcess(EntrepriseInfra entrepriseInfra){
-        return new EntrepriseCreateProcessImpl(entrepriseInfra);
+    public EntrepriseCreateProcess entrepriseCreateProcess(EntrepriseInfra entrepriseInfra, SecteurInfra secteurInfra){
+        return new EntrepriseCreateProcessImpl(entrepriseInfra, secteurInfra);
     }
     @Bean
     public PriceChangeProcess priceChangeProcess(EntrepriseInfra entrepriseInfra, PriceInfra priceInfra){

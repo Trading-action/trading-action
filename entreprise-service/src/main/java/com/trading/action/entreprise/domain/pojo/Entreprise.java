@@ -13,7 +13,7 @@ public class Entreprise {
     private Price prixAction;
     private BigDecimal nombreAction;
     private BigDecimal dividende;
-
+    private Secteur secteur;
     public Entreprise() {
     }
 
@@ -24,6 +24,14 @@ public class Entreprise {
         this.prixAction = prixAction;
         this.nombreAction = nombreAction;
         this.dividende = dividende;
+    }
+
+    public Secteur getSecteur() {
+        return secteur;
+    }
+
+    public void setSecteur(Secteur secteur) {
+        this.secteur = secteur;
     }
 
     public Long getId() {

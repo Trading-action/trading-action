@@ -1,5 +1,6 @@
 package com.trading.action.entreprise.infra.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,10 +26,13 @@ public class EntrepriseEntity extends AbstractEntity {
     BigDecimal nombreAction;
     BigDecimal dividende;
     @OneToOne
+    @JsonIgnoreProperties({"id","entreprise"})
     @Nullable
     PriceEntity prixActuel;
+    @JsonIgnoreProperties({"id","entreprise"})
     @OneToMany(mappedBy = "entreprise")
     private List<PriceEntity> prixHistorique;
+    @JsonIgnoreProperties({"id","entreprises"})
     @ManyToOne
     @Nullable
     private SecteurEntity secteur;

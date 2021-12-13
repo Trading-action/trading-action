@@ -9,8 +9,18 @@ public class EntrepriseCreateInput extends AbstractProcessInput {
     private String adress;
     private BigDecimal nombreAction;
     private BigDecimal dividende;
+    private String secteur;
+
 
     public EntrepriseCreateInput() {
+    }
+
+    public String getSecteur() {
+        return secteur;
+    }
+
+    public void setSecteur(String secteur) {
+        this.secteur = secteur;
     }
 
     public String getLibelle() {

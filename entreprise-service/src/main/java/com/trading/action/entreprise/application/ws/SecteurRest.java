@@ -29,9 +29,11 @@ public class SecteurRest {
     @PostMapping("/")
     public Result save(@RequestBody SecteurDto secteurDto) {
         Secteur secteur = new Secteur();
+        Result result = new Result();
         BeanUtils.copyProperties(secteurDto,secteur);
         secteurInfra.save(secteur);
-        return null;
+        result.addInfoMessage(secteurInfra.getMessage("sector.created"));
+        return result;
     }
 
     @Operation(summary = "get all companies")

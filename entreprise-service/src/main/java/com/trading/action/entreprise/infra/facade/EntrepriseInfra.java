@@ -1,6 +1,7 @@
 package com.trading.action.entreprise.infra.facade;
 
 import com.trading.action.entreprise.domain.pojo.Entreprise;
+import com.trading.action.entreprise.domain.pojo.Secteur;
 import com.trading.action.entreprise.infra.core.AbstractInfra;
 import com.trading.action.entreprise.infra.entity.EntrepriseEntity;
 
@@ -20,6 +21,4 @@ public interface EntrepriseInfra extends AbstractInfra {
     List<EntrepriseEntity> findAll();
 
     int update(Entreprise entreprise);
-
-
 }

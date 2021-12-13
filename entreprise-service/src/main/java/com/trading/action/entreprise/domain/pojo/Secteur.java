@@ -3,7 +3,6 @@ package com.trading.action.entreprise.domain.pojo;
 public class Secteur {
     private Long id;
     private String libelle;
-    private String reference;
 
     public Secteur() {
     }
@@ -11,7 +10,6 @@ public class Secteur {
     public Secteur(Long id, String libelle, String reference) {
         this.id = id;
         this.libelle = libelle;
-        this.reference = reference;
     }
 
     public Long getId() {
@@ -28,13 +26,5 @@ public class Secteur {
 
     public void setLibelle(String libelle) {
         this.libelle = libelle;
-    }
-
-    public String getReference() {
-        return reference;
-    }
-
-    public void setReference(String reference) {
-        this.reference = reference;
     }
 }

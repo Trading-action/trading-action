@@ -10,6 +10,7 @@ public class EntrepriseDto {
     private String adress;
     private BigDecimal nombreAction;
     private BigDecimal dividende;
+    private String secteur;
 
     public EntrepriseDto() {
     }
@@ -27,6 +28,14 @@ public class EntrepriseDto {
 
     public void setLibelle(String libelle) {
         this.libelle = libelle;
+    }
+
+    public String getSecteur() {
+        return secteur;
+    }
+
+    public void setSecteur(String secteur) {
+        this.secteur = secteur;
     }
 
     public String getAdress() {
