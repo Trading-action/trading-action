@@ -13,6 +13,7 @@ import com.trading.clientservice.infra.facade.ActionInfra;
 import com.trading.clientservice.infra.facade.ActionnaireInfra;
 import com.trading.clientservice.infra.facade.CompteInfra;
 import com.trading.clientservice.infra.facade.CompteTypeInfra;
+import com.trading.clientservice.infra.required.EntrepriseService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -35,8 +36,8 @@ public class Processinjection {
     }
 
     @Bean
-    public PortefeuilleProcess portefeuilleProcess(ActionInfra actionInfra, ActionnaireInfra actionnaireInfra){
-        return new PortefeuilleProcessImpl(actionInfra,actionnaireInfra);
+    public PortefeuilleProcess portefeuilleProcess(EntrepriseService entrepriseService,ActionInfra actionInfra, ActionnaireInfra actionnaireInfra){
+        return new PortefeuilleProcessImpl(entrepriseService,actionInfra,actionnaireInfra);
     }
 
 }

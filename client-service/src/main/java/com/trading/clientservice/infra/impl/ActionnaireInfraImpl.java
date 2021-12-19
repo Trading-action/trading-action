@@ -55,44 +55,37 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
 
     @Override
     public Portefeuille getPortefeuilles(List<Action> actions) {
-
         Portefeuille portefeuille = new Portefeuille();
         if (!actions.isEmpty()) {
-
             portefeuille.setPortefeuilleItemList(new ArrayList<>());
-
             for (int i = 0; i < actions.size(); i++) {
                 PriceHistory priceHistory = new PriceHistory();
                 priceHistory.setDate(actions.get(i).getCreatedAt());
                 priceHistory.setEntrepriseLibelle(actions.get(i).getRefEntreprise());
                 Result<List<Price>, List<Price>> result = entrepriseService.findPrixHestoryByDateAndEntreprise(priceHistory);
-                List<Price> prices = result.getOutput();
-                PortefeuilleItem portefeuilleItem = new PortefeuilleItem();
-
-                List<PortefeuilleAction> portefeuilleActionList = new ArrayList<>();
-                portefeuilleItem.setPortefeuilleActionList(portefeuilleActionList);
-
-                PortefeuilleAction portefeuilleAction = new PortefeuilleAction();
-                portefeuilleAction.setDate( prices.get(0).getCreatedAt());
-                portefeuilleAction.setPrix(prices.get(0).getPrix());
-                portefeuilleAction.setPrixPerteOrProfit(prices.get(0).getPrix());
-
-                portefeuilleItem.setAction(actions.get(i));
-
-                portefeuilleItem.getPortefeuilleActionList().add(portefeuilleAction);
-
-
-                for (int j = 1; j < prices.size(); j++) {
-                    PortefeuilleAction portefeuilleAction1 = new PortefeuilleAction();
-                    portefeuilleAction1.setDate(prices.get(j).getCreatedAt());
-                    portefeuilleAction1.setPrix(prices.get(j).getPrix());
-                    portefeuilleAction1.setPrixPerteOrProfit(prices.get(j).getPrix().subtract(prices.get(0).getPrix()));
-                    portefeuilleItem.getPortefeuilleActionList().add(portefeuilleAction1);
-
+                log.error("prices " + result.toString());
+                if (result.getOutput() != null) {
+                    List<Price> prices = result.getOutput();
+                    PortefeuilleItem portefeuilleItem = new PortefeuilleItem();
+                    List<PortefeuilleAction> portefeuilleActionList = new ArrayList<>();
+                    portefeuilleItem.setPortefeuilleActionList(portefeuilleActionList);
+                    PortefeuilleAction portefeuilleAction = new PortefeuilleAction();
+                    portefeuilleAction.setDate(prices.get(0).getCreatedAt());
+                    portefeuilleAction.setPrix(prices.get(0).getPrix());
+                    portefeuilleAction.setPrixPerteOrProfit(prices.get(0).getPrix());
+                    portefeuilleItem.setAction(actions.get(i));
+                    portefeuilleItem.getPortefeuilleActionList().add(portefeuilleAction);
+                    for (int j = 1; j < prices.size(); j++) {
+                        PortefeuilleAction portefeuilleAction1 = new PortefeuilleAction();
+                        portefeuilleAction1.setDate(prices.get(j).getCreatedAt());
+                        portefeuilleAction1.setPrix(prices.get(j).getPrix());
+                        portefeuilleAction1.setPrixPerteOrProfit(prices.get(j).getPrix().subtract(prices.get(0).getPrix()));
+                        portefeuilleItem.getPortefeuilleActionList().add(portefeuilleAction1);
+                    }
+                    portefeuille.getPortefeuilleItemList().add(portefeuilleItem);
+                }else{
+                    return  null;
                 }
-
-                portefeuille.getPortefeuilleItemList().add(portefeuilleItem);
-
             }
             return portefeuille;
         }
