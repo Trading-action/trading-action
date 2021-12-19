@@ -30,6 +30,7 @@ public class SecteurRest {
     public Result save(@RequestBody SecteurDto secteurDto) {
         Secteur secteur = new Secteur();
         Result result = new Result();
+        secteurDto.setLibelle(secteurDto.getLibelle().trim().toLowerCase());
         BeanUtils.copyProperties(secteurDto,secteur);
         secteurInfra.save(secteur);
         result.addInfoMessage(secteurInfra.getMessage("sector.created"));

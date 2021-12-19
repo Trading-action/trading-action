@@ -5,149 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6c3d45a364a820a1edeaae082ff9c073f299948" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb97f49d6764da4f8048fd1da01411076cadb3fe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/PriceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/PriceHistoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/SecteurDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcessInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionEtat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/AbstractInfra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/AbstractInfraImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/messaging/LocalMessageReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/messaging/LocalMessageReaderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/PriceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/SecteurDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/PriceInfra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/SecteurInfra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/PriceInfraImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/SecteurInfraImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entreprise-service/src/test/java/com/trading/action/entreprise/BourseServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/BourseServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/ActionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/ActionnaireDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Actionnaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CommissionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Commission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionIntermediareDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CommissionIntermediare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CompteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CompteTypeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CompteType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/EntrepriseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/IntermediareDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Intermediare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/PriceDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionEtatDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionTypeDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/util/Processinjection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/ws/EntrepriseRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/ws/PriceRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcessImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcessInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/MessageType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateProcessImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Actionnaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Commission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CommissionDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CommissionIntermediare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Compte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CompteType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Entreprise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Intermediare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Price.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionEtat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeProcessImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/AbstractInfra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/AbstractInfraImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/messaging/LocalMessageReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/messaging/LocalMessageReaderImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/dao/EntrepriseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/dao/PriceDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/AbstractEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/EntrepriseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/PriceEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/facade/EntrepriseInfra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/facade/PriceInfra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/impl/EntrepriseInfraImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/impl/PriceInfraImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bourse-service/src/test/java/com/trading/action/bourse/BourseServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/EntrepriseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/EntrepriseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/util/Processinjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/util/Processinjection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/PriceRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/PriceRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/SecteurRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/SecteurRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcessImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Entreprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Entreprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Secteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Secteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcessImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/EntrepriseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/EntrepriseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/EntrepriseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/EntrepriseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/PriceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/PriceEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/SecteurEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/SecteurEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/EntrepriseInfra.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/EntrepriseInfra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/EntrepriseInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/EntrepriseInfraImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_en.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_fr.properties" afterDir="false" />
@@ -198,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/entreprise-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -261,6 +122,9 @@
       <workItem from="1639385953800" duration="2576000" />
       <workItem from="1639405396881" duration="10701000" />
       <workItem from="1639428304815" duration="10503000" />
+      <workItem from="1639559654461" duration="602000" />
+      <workItem from="1639913058084" duration="640000" />
+      <workItem from="1639914247791" duration="4861000" />
     </task>
     <servers />
   </component>

@@ -21,6 +21,9 @@ public class EntrepriseCreateProcessImpl extends AbstractProcessImpl<EntrepriseC
         if(entrepriseLibelle != null){
             result.addErrorMessage(entrepriseInfra.getMessage("entreprise.libelle.duplicated"));
         }
+        if(secteurInfra.findByLibelle(entrepriseCreateInput.getSecteur()) == null){
+            result.addErrorMessage(secteurInfra.getMessage("sector.not.found"));
+        }
     }
 
     @Override
@@ -31,17 +34,7 @@ public class EntrepriseCreateProcessImpl extends AbstractProcessImpl<EntrepriseC
         entreprise.setNombreAction(entrepriseCreateInput.getNombreAction());
         entreprise.setLibelle(entrepriseCreateInput.getLibelle());
         entreprise.setReference(entrepriseCreateInput.getLibelle()+entreprise.getAdress().split(" ")[0]);
-        if(entrepriseCreateInput.getSecteur() != null){
-            Secteur secteur = secteurInfra.findByLibelle(entrepriseCreateInput.getSecteur().trim().toLowerCase());
-            if(secteur == null){
-                Secteur secteur1 = new Secteur();
-                secteur1.setLibelle(entrepriseCreateInput.getSecteur());
-                secteurInfra.save(secteur1);
-                result.addInfoMessage(secteurInfra.getMessage("sector.created"));
-            }else{
-                entreprise.setSecteur(secteur);
-            }
-        }
+        entreprise.setSecteur(secteurInfra.findByLibelle(entrepriseCreateInput.getSecteur().trim().toLowerCase()));
         entrepriseInfra.save(entreprise);
         result.addInfoMessage(entrepriseInfra.getMessage("entreprise.created"));
     }
