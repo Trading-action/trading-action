@@ -4,6 +4,8 @@ import com.trading.clientservice.domain.pojo.Action;
 import com.trading.clientservice.infra.core.AbstractInfraImpl;
 import com.trading.clientservice.infra.dao.ActionDao;
 import com.trading.clientservice.infra.entity.ActionEntity;
+import com.trading.clientservice.infra.entity.ActionnaireEntity;
+import com.trading.clientservice.infra.entity.CompteTypeEntity;
 import com.trading.clientservice.infra.facade.ActionInfra;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -27,8 +29,9 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
         Action action = new Action();
         if (actionEntity != null) {
             BeanUtils.copyProperties(actionEntity, action);
+            return action;
         }
-        return action;
+        return null;
     }
 
     @Override
@@ -43,6 +46,16 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
         }
         actionDao.save(actionEntity);
         return 1;
+    }
+
+    @Override
+    public void save(Action action) {
+        ActionEntity actionEntity = new ActionEntity();
+        BeanUtils.copyProperties(action, actionEntity);
+        ActionnaireEntity actionnaire = new ActionnaireEntity();
+        actionnaire.setId(action.getActionnaire().getId());
+        actionEntity.setActionnaire(actionnaire);
+        actionDao.save(actionEntity);
     }
 
     @Override

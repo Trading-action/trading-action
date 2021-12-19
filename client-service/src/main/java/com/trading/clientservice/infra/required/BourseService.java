@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.time.Instant;
 import java.util.List;
 
-@FeignClient(name = "BOURSE_SERVICE")
+@FeignClient(name = "BOURSE-SERVICE")
 public interface BourseService {
 
     @GetMapping("")

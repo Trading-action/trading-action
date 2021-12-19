@@ -1,20 +1,25 @@
-package com.trading.clientservice.domain.actionnaire.create;
+package com.trading.clientservice.domain.action.create;
 
 
 import com.trading.clientservice.domain.core.AbstractProcessInput;
 
-public class ActionnaireCreateInput extends AbstractProcessInput {
+import java.math.BigDecimal;
+
+public class ActionCreateInput extends AbstractProcessInput {
+
 
      private String ref;
-     private String username;
-     private String refCompte;
+     private String refActionnaire;
+     private boolean inBourse;
+     private String refEntreprise;
+     private BigDecimal prix;
 
-     public String getRefCompte() {
-          return refCompte;
+     public BigDecimal getPrix() {
+          return prix;
      }
 
-     public void setRefCompte(String refCompte) {
-          this.refCompte = refCompte;
+     public void setPrix(BigDecimal prix) {
+          this.prix = prix;
      }
 
      public String getRef() {
@@ -25,11 +30,27 @@ public class ActionnaireCreateInput extends AbstractProcessInput {
           this.ref = ref;
      }
 
-     public String getUsername() {
-          return username;
+     public String getRefActionnaire() {
+          return refActionnaire;
      }
 
-     public void setUsername(String username) {
-          this.username = username;
+     public void setRefActionnaire(String refActionnaire) {
+          this.refActionnaire = refActionnaire;
+     }
+
+     public boolean isInBourse() {
+          return inBourse;
+     }
+
+     public void setInBourse(boolean inBourse) {
+          this.inBourse = inBourse;
+     }
+
+     public String getRefEntreprise() {
+          return refEntreprise;
+     }
+
+     public void setRefEntreprise(String refEntreprise) {
+          this.refEntreprise = refEntreprise;
      }
 }

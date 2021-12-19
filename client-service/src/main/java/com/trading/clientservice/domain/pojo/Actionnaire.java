@@ -3,9 +3,18 @@ package com.trading.clientservice.domain.pojo;
 
 
 public class Actionnaire {
+    private Long id;
     private String username;
     private  String ref;
     private String  refCompte;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;

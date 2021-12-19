@@ -1,48 +1,50 @@
-package com.trading.clientservice.domain.actionnaire.create;
+package com.trading.clientservice.domain.action.create;
 
 
 import com.trading.clientservice.domain.core.AbstractProcessImpl;
 import com.trading.clientservice.domain.core.Result;
+import com.trading.clientservice.domain.pojo.Action;
 import com.trading.clientservice.domain.pojo.Actionnaire;
-import com.trading.clientservice.domain.pojo.Compte;
+import com.trading.clientservice.infra.facade.ActionInfra;
 import com.trading.clientservice.infra.facade.ActionnaireInfra;
-import com.trading.clientservice.infra.facade.CompteInfra;
 
-public class ActionnaireCreateProcessImpl extends AbstractProcessImpl<ActionnaireCreateInput> implements ActionnaireCreateProcess {
+public class ActionCreateProcessImpl extends AbstractProcessImpl<ActionCreateInput> implements ActionCreateProcess {
 
     private ActionnaireInfra actionnaireInfra;
-    private CompteInfra compteInfra;
+    private ActionInfra actionInfra;
 
-    public ActionnaireCreateProcessImpl(ActionnaireInfra actionnaireInfra, CompteInfra compteInfra) {
+    public ActionCreateProcessImpl(ActionnaireInfra actionnaireInfra, ActionInfra actionInfra) {
         this.actionnaireInfra = actionnaireInfra;
-        this.compteInfra =compteInfra;
+        this.actionInfra = actionInfra;
     }
 
 
-
     @Override
-    public void validate(ActionnaireCreateInput actionnaireCreatenput, Result result) {
-        String ref = actionnaireCreatenput
-                .getRef();
-        Actionnaire actionnaire = actionnaireInfra.findByRef(ref);
+    public void validate(ActionCreateInput actionCreateInput, Result result) {
 
-        Compte  compte =  compteInfra.findByRef(actionnaireCreatenput.getRefCompte());
-        if (actionnaire != null) {
-            result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.already_exists"));
+        Actionnaire actionnaire = actionnaireInfra.findByRef(actionCreateInput.getRefActionnaire());
+        Action action = actionInfra.findByRef(actionCreateInput.getRef());
+
+        if (actionnaire == null) {
+            result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.not_founded"));
         }
 
-        if (compte == null) {
-            result.addErrorMessage(actionnaireInfra.getMessage("compte.not_found"));
+        if (action != null) {
+            result.addErrorMessage(actionnaireInfra.getMessage("action.already_exists"));
         }
     }
 
     @Override
-    public void run(ActionnaireCreateInput actionnaireCreatenput, Result result) {
-        Actionnaire actionnaire = new Actionnaire();
-        actionnaire.setRef(actionnaireCreatenput.getRef());
-        actionnaire.setUsername(actionnaireCreatenput.getUsername());
-        actionnaire.setRefCompte(actionnaireCreatenput.getRefCompte());
-        actionnaireInfra.save(actionnaire);
-        result.addInfoMessage(actionnaireInfra.getMessage("actionnaire.created"));
+    public void run(ActionCreateInput actionCreateInput, Result result) {
+        Action action = new Action();
+        action.setPrix(actionCreateInput.getPrix());
+        action.setRef(actionCreateInput.getRef());
+        action.setInBourse(actionCreateInput.isInBourse());
+        action.setRefEntreprise(actionCreateInput.getRefEntreprise());
+        Actionnaire actionnaire = actionnaireInfra.findByRef(actionCreateInput.getRefActionnaire());
+        action.setActionnaire(actionnaire);
+
+        actionInfra.save(action);
+        result.addInfoMessage(actionnaireInfra.getMessage("action.created"));
     }
 }

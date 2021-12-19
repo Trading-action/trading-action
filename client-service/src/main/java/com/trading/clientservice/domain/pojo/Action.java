@@ -11,7 +11,15 @@ public class Action {
     private boolean inBourse;
     private String refEntreprise;
     private BigDecimal prix;
+    private Actionnaire actionnaire;
 
+    public Actionnaire getActionnaire() {
+        return actionnaire;
+    }
+
+    public void setActionnaire(Actionnaire actionnaire) {
+        this.actionnaire = actionnaire;
+    }
 
     public BigDecimal getPrix() {
         return prix;

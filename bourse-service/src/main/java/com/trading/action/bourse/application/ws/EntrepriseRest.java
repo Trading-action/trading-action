@@ -4,6 +4,7 @@ import com.trading.action.bourse.application.dto.EntrepriseDto;
 import com.trading.action.bourse.domain.core.Result;
 import com.trading.action.bourse.domain.entreprise.create.EntrepriseCreateInput;
 import com.trading.action.bourse.domain.entreprise.create.EntrepriseCreateProcess;
+import com.trading.action.bourse.domain.pojo.Entreprise;
 import com.trading.action.bourse.infra.entity.EntrepriseEntity;
 import com.trading.action.bourse.infra.facade.EntrepriseInfra;
 import io.swagger.v3.oas.annotations.Operation;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/entreprise")
-@Tag(name = "Entreprise",description = "Cette classe permet de tester les process de la entreprise")
+@Tag(name = "Entreprise", description = "Cette classe permet de tester les process de la entreprise")
 public class EntrepriseRest {
     @Autowired
     EntrepriseInfra entrepriseInfra;
@@ -27,12 +28,17 @@ public class EntrepriseRest {
         return entrepriseCreateProcess.execute(entrepriseCreateInput);
     }
 
-   @Operation(summary = "get all companies")
+    @Operation(summary = "get all companies")
     @GetMapping("/")
     public List<EntrepriseEntity> findAll() {
         return entrepriseInfra.findAll();
     }
 
+    @Operation(summary = "get Entreprise by  reference")
+    @GetMapping("/{reference}")
+    public Entreprise findByReference(@PathVariable  String reference) {
+        return entrepriseInfra.findByReference(reference);
+    }
 
     @Autowired
     private EntrepriseCreateProcess entrepriseCreateProcess;
