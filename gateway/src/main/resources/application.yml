@@ -41,12 +41,5 @@ management:
       exposure:
         include: hystrix.stream
 
-eureka:
-  instance:
-    appname: API_GATEWAY
-  client:
-    register-with-eureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+
 
