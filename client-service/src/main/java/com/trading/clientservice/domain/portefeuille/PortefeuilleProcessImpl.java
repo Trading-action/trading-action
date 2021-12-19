@@ -53,11 +53,9 @@ public class PortefeuilleProcessImpl extends AbstractProcessImpl<PortefeuilleInp
 
                 portefeuille.setPrix(actions.stream().map(Action::getPrix).reduce(BigDecimal.ZERO, BigDecimal::add));
 
-                //TODO: get name of entreprise by ref
-                portefeuille.setNomEnreprise("entrepriseService.findByLibelle(actions.get(0).getRefEntreprise()).getOutput()");
+                portefeuille.setNomEnreprise(actions.get(0).getRefEntreprise());
 
-                //TODO: get  percentage of actions
-                portefeuille.setPercentage(2);
+                portefeuille.setPercentage(entrepriseService.getSharePercentage(actions.get(0).getRefEntreprise(), new BigDecimal(actions.size())).getOutput().doubleValue());
 
                 portefeuilles.add(portefeuille);
             }
