@@ -1,0 +1,52 @@
+server:
+  port: 9191
+
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: CLIENT-SERVICE
+          uri: lb://CLIENT-SERVICE
+          predicates:
+            - Path=/api/v1/actionnaires/**,/api/v1/actions/**,/api/v1/comptes/**,/api/v1/type-comptes/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: CLIENT-SERVICE
+                fallbackuri: forward:/clientServiceFallBack
+        - id: ENTREPRISE-SERVICE
+          uri: lb://ENTREPRISE-SERVICE
+          predicates:
+            - Path=/api/v1/entreprise/**,/api/v1/price/**,/api/v1/secteur/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: ENTREPRISE-SERVICE
+                fallbackuri: forward:/entrepriseServiceFallBack
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+eureka:
+  instance:
+    appname: API_GATEWAY
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
