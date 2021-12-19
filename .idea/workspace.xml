@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/SecteurRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/SecteurRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcessImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/PriceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/PriceDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,7 @@
       <workItem from="1639428304815" duration="10503000" />
       <workItem from="1639559654461" duration="602000" />
       <workItem from="1639913058084" duration="640000" />
-      <workItem from="1639914247791" duration="5243000" />
+      <workItem from="1639914247791" duration="9413000" />
     </task>
     <servers />
   </component>
