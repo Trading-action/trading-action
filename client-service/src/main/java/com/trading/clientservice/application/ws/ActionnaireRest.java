@@ -32,7 +32,7 @@ public class ActionnaireRest {
 
     @Operation(summary = "get portefeuilles ")
     @GetMapping("/portefeuilles/{username}")
-    public Result save(@PathVariable String username) {
+    public Result getPortefeuilles(@PathVariable String username) {
         PortefeuilleInput portefeuilleInput = new PortefeuilleInput();
         portefeuilleInput.setUsername(username);
         return portefeuilleProcess.execute(portefeuilleInput);
