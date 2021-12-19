@@ -13,6 +13,7 @@ public interface ActionInfra extends AbstractInfra {
     int deleteByRef(String ref);
 
     int save(ActionEntity actionEntity);
+    void save(Action action);
 
     int update(ActionEntity actionEntity);
 

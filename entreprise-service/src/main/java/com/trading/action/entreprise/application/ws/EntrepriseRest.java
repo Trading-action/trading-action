@@ -17,6 +17,7 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.List;
 
+
 @RestController
 @RequestMapping("entreprise")
 @Tag(name = "Entreprise",description = "Cette classe permet de tester les process de la entreprise")

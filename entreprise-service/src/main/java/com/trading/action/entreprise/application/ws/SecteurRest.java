@@ -1,13 +1,9 @@
 package com.trading.action.entreprise.application.ws;
 
-import com.trading.action.entreprise.application.dto.EntrepriseDto;
 import com.trading.action.entreprise.application.dto.SecteurDto;
 import com.trading.action.entreprise.domain.core.Result;
-import com.trading.action.entreprise.domain.entreprise.create.EntrepriseCreateInput;
 import com.trading.action.entreprise.domain.pojo.Secteur;
-import com.trading.action.entreprise.infra.entity.EntrepriseEntity;
 import com.trading.action.entreprise.infra.entity.SecteurEntity;
-import com.trading.action.entreprise.infra.facade.EntrepriseInfra;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.BeanUtils;
@@ -16,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import com.trading.action.secteur.infra.facade.SecteurInfra;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("secteur")

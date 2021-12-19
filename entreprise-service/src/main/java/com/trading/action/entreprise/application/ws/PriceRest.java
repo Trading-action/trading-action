@@ -9,8 +9,6 @@ import com.trading.action.entreprise.domain.price.history.PriceHistoryByDateAndE
 import com.trading.action.entreprise.domain.price.history.PriceHistoryByDateAndEntrepriseProcess;
 import com.trading.action.entreprise.infra.entity.PriceEntity;
 import com.trading.action.entreprise.infra.facade.PriceInfra;
-//import io.swagger.annotations.Api;
-//import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.BeanUtils;
@@ -18,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("price")

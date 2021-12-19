@@ -1,6 +1,8 @@
 package com.trading.clientservice.application.util;
 
 
+import com.trading.clientservice.domain.action.create.ActionCreateProcess;
+import com.trading.clientservice.domain.action.create.ActionCreateProcessImpl;
 import com.trading.clientservice.domain.actionnaire.create.ActionnaireCreateProcess;
 import com.trading.clientservice.domain.actionnaire.create.ActionnaireCreateProcessImpl;
 import com.trading.clientservice.domain.compte.create.CompteCreateProcess;
@@ -25,6 +27,11 @@ public class Processinjection {
     @Bean
     public CompteCreateProcess compteCreateProcess(CompteInfra compteInfra, CompteTypeInfra compteTypeInfra){
         return new CompteCreateProcessImpl(compteInfra,compteTypeInfra);
+    }
+
+    @Bean
+    public ActionCreateProcess actionCreateProcess(ActionnaireInfra actionnaireInfra, ActionInfra actionInfra){
+        return new ActionCreateProcessImpl(actionnaireInfra,actionInfra);
     }
 
     @Bean

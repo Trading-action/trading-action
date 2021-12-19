@@ -60,6 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -124,7 +125,7 @@
       <workItem from="1639428304815" duration="10503000" />
       <workItem from="1639559654461" duration="602000" />
       <workItem from="1639913058084" duration="640000" />
-      <workItem from="1639914247791" duration="4861000" />
+      <workItem from="1639914247791" duration="5243000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,14 @@
 package com.trading.clientservice.infra.impl;
 
+import com.trading.clientservice.domain.core.Result;
 import com.trading.clientservice.domain.pojo.*;
 import com.trading.clientservice.infra.core.AbstractInfraImpl;
 import com.trading.clientservice.infra.dao.ActionnaireDao;
 import com.trading.clientservice.infra.entity.ActionnaireEntity;
 import com.trading.clientservice.infra.facade.ActionnaireInfra;
 import com.trading.clientservice.infra.facade.CompteInfra;
-import lombok.RequiredArgsConstructor;
+import com.trading.clientservice.infra.required.EntrepriseService;
+import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -20,12 +22,13 @@ import java.util.List;
 
 @Component
 @Slf4j
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class ActionnaireInfraImpl extends AbstractInfraImpl implements ActionnaireInfra {
 
 
-    private final ActionnaireDao actionnaireDao;
-    private final CompteInfra compteInfra;
+    private ActionnaireDao actionnaireDao;
+    private CompteInfra compteInfra;
+    private EntrepriseService entrepriseService;
 
 
     @Override
@@ -53,22 +56,24 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
     @Override
     public Portefeuille getPortefeuilles(List<Action> actions) {
 
-       Portefeuille portefeuille = new Portefeuille();
+        Portefeuille portefeuille = new Portefeuille();
         if (!actions.isEmpty()) {
 
             portefeuille.setPortefeuilleItemList(new ArrayList<>());
 
             for (int i = 0; i < actions.size(); i++) {
-
-                List<Price> prices = findPrixHestoryByDateAndEntreprise(actions.get(i).getCreatedAt(), actions.get(i).getRefEntreprise());
+                PriceHistory priceHistory = new PriceHistory();
+                priceHistory.setDate(actions.get(i).getCreatedAt());
+                priceHistory.setEntrepriseLibelle(actions.get(i).getRefEntreprise());
+                Result<List<Price>, List<Price>> result = entrepriseService.findPrixHestoryByDateAndEntreprise(priceHistory);
+                List<Price> prices = result.getOutput();
                 PortefeuilleItem portefeuilleItem = new PortefeuilleItem();
-
 
                 List<PortefeuilleAction> portefeuilleActionList = new ArrayList<>();
                 portefeuilleItem.setPortefeuilleActionList(portefeuilleActionList);
 
                 PortefeuilleAction portefeuilleAction = new PortefeuilleAction();
-                portefeuilleAction.setDate(prices.get(0).getCreatedAt());
+                portefeuilleAction.setDate( prices.get(0).getCreatedAt());
                 portefeuilleAction.setPrix(prices.get(0).getPrix());
                 portefeuilleAction.setPrixPerteOrProfit(prices.get(0).getPrix());
 

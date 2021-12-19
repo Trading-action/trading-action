@@ -1,5 +1,6 @@
 package com.trading.action.entreprise.infra.entity;
 
+import lombok.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -15,6 +16,7 @@ import javax.persistence.OneToOne;
 import java.math.BigDecimal;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
 @AllArgsConstructor

@@ -27,7 +27,7 @@ public class PortefeuilleProcessImpl extends AbstractProcessImpl<PortefeuilleInp
     public void validate(PortefeuilleInput portefeuilleInput, Result result) {
 
         if (actionnaireInfra.findByUsername(portefeuilleInput.getUsername()) == null) {
-            result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.noy_found"));
+            result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.not_founded"));
         }
 
         List<Action> actions =actionInfra.findByActionnaireUsername(portefeuilleInput.getUsername());

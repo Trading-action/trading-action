@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
+
 public class EntrepriseInfraImpl extends AbstractInfraImpl implements EntrepriseInfra {
     @Autowired
     EntrepriseDao entrepriseDao;
