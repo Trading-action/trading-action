@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/actionnaire")
+@RequestMapping("/actionnaires")
 @Tag(name = "actionnaire", description = "Cette classe permet de tester les process de la actionnaire")
 @Slf4j
 @RequiredArgsConstructor
