@@ -12,8 +12,7 @@ import java.util.List;
 public class PriceHistoryByDateAndEntrepriseProcessImpl extends AbstractProcessImpl<PriceHistoryByDateAndEntrepriseInput> implements PriceHistoryByDateAndEntrepriseProcess {
     @Override
     public void validate(PriceHistoryByDateAndEntrepriseInput historyProcessInput, Result result) {
-        Entreprise entreprise = entrepriseInfra.findByLibelle(historyProcessInput.getEntrepriseLibelle());
-        if(entreprise == null){
+        if(entrepriseInfra.findByLibelle(historyProcessInput.getEntrepriseLibelle()) == null){
             result.addErrorMessage(entrepriseInfra.getMessage("entreprise.not_found"));
         }
         if(!priceInfra.hasOlderPrices(historyProcessInput.getEntrepriseLibelle(), historyProcessInput.getDate())){
