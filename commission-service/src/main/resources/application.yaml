@@ -15,14 +15,7 @@ spring:
 
 server:
   port: 8089
-  servlet:
-    context-path: /api/v1/:eureka
-  instance:
-    appname: COMMISION-SERVICE
-  client:
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+
 
 zipkin:
   base-url: http://localhost:9411/
