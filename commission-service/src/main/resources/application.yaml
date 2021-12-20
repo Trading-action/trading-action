@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: COMMISION-SERVICE
+
+  #h2:
+  #  console.path: /h2-console
+  #  console.enabled: true
+  #  console.settings.trace: false
+  #  spring.h2.console.settings.web-allow-others: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/commission
+    username: mac
+    password:
+    driverClassName: org.postgresql.Driver
+
+
+eureka:
+  instance:
+    appname: COMMISION-SERVICE
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

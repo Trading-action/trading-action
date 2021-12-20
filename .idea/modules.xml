@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bourse-service/bourse-service.iml" filepath="$PROJECT_DIR$/bourse-service/bourse-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/client-service/client-service.iml" filepath="$PROJECT_DIR$/client-service/client-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commission-service/commission-service.iml" filepath="$PROJECT_DIR$/commission-service/commission-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eureka Server/eureka-server.iml" filepath="$PROJECT_DIR$/Eureka Server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/intermediaire-service/intermediaire-service.iml" filepath="$PROJECT_DIR$/intermediaire-service/intermediaire-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/trading-action.iml" filepath="$PROJECT_DIR$/.idea/trading-action.iml" />
