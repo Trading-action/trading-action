@@ -1,6 +1,6 @@
 spring:
   application:
-    name: COMMISION-SERVICE
+    name: COMMISSION-SERVICE
 
   #h2:
   #  console.path: /h2-console
@@ -13,11 +13,16 @@ spring:
     password:
     driverClassName: org.postgresql.Driver
 
-
-eureka:
+server:
+  port: 8089
+  servlet:
+    context-path: /api/v1/:eureka
   instance:
     appname: COMMISION-SERVICE
   client:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+zipkin:
+  base-url: http://localhost:9411/

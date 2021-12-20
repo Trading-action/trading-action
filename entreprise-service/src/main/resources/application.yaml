@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ENTREPRISE-SERVICE
+  zipkin:
+    base-url: http://localhost:9411/

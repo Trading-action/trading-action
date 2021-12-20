@@ -142,5 +142,18 @@ public class Result<T,K> {
         this.infos = infos;
     }
 
+    @Override
+    public String toString() {
+        return "Result{" +
+                "messages=" + messages +
+                ", errors=" + errors +
+                ", warnings=" + warnings +
+                ", infos=" + infos +
+                ", status=" + status +
+                ", message='" + message + '\'' +
+                ", input=" + input +
+                ", output=" + output +
+                '}';
+    }
 }
 

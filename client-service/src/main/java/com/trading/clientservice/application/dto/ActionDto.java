@@ -1,24 +1,25 @@
 package com.trading.clientservice.application.dto;
 
 
-import java.time.Instant;
+import com.trading.clientservice.domain.action.create.ActionCreateInput;
+import com.trading.clientservice.domain.actionnaire.create.ActionnaireCreateInput;
+
+import java.math.BigDecimal;
 
 public class ActionDto {
 
-    private Long id;
     private String ref;
-    private Instant createdAt;
-    private Instant updatedAt;
-    private ActionnaireDto actionnaire;
+    private String refActionnaire;
     private boolean inBourse;
     private String refEntreprise;
+    private BigDecimal prix;
 
-    public Long getId() {
-        return id;
+    public BigDecimal getPrix() {
+        return prix;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setPrix(BigDecimal prix) {
+        this.prix = prix;
     }
 
     public String getRef() {
@@ -29,28 +30,12 @@ public class ActionDto {
         this.ref = ref;
     }
 
-    public Instant getCreatedAt() {
-        return createdAt;
+    public String getRefActionnaire() {
+        return refActionnaire;
     }
 
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public ActionnaireDto getActionnaire() {
-        return actionnaire;
-    }
-
-    public void setActionnaire(ActionnaireDto actionnaire) {
-        this.actionnaire = actionnaire;
+    public void setRefActionnaire(String refActionnaire) {
+        this.refActionnaire = refActionnaire;
     }
 
     public boolean isInBourse() {
@@ -67,5 +52,15 @@ public class ActionDto {
 
     public void setRefEntreprise(String refEntreprise) {
         this.refEntreprise = refEntreprise;
+    }
+
+    public static ActionCreateInput toActionCreatenput(ActionDto actionDto) {
+        ActionCreateInput actionCreatenput = new ActionCreateInput();
+        actionCreatenput.setRef(actionDto.getRef());
+        actionCreatenput.setInBourse(actionDto.isInBourse());
+        actionCreatenput.setRefActionnaire(actionDto.getRefActionnaire());
+        actionCreatenput.setPrix(actionDto.getPrix());
+        actionCreatenput.setRefEntreprise(actionDto.getRefEntreprise());
+        return actionCreatenput;
     }
 }

@@ -4,179 +4,503 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/CommissionServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/ActionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/ActionnaireDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/CommissionDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/CommissionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/CommissionIntermediareDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/CompteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/CompteTypeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/EntrepriseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/IntermediareDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/TransactionDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/TransactionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/TransactionEtatDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/dto/TransactionTypeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/utils/ProcessInjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/ws/CommissionRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/calculate/CommissionCalculateInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/calculate/CommissionCalculateProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/calculate/CommissionCalculateProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/create/CommissionCreateInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/create/CommissionCreateProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/create/CommissionCreateProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/findByRefAction/CommissionFindByRefActionInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/findByRefAction/CommissionFindByRefActionProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/commission/findByRefAction/CommissionFindByRefActionProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/AbstractProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/AbstractProcessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/AbstractProcessInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Actionnaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Commission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/CommissionDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/CommissionIntermediare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Compte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/CompteType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Entreprise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Intermediare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Portefeuille.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/PortefeuilleAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/PortefeuilleItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/TransactionDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/TransactionEtat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo/TypeCommission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/core/AbstractInfra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/core/AbstractInfraImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/core/messaging/LocalMessageReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/core/messaging/LocalMessageReaderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/dao/CommissionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/CommissionDetailEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/CommissionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/TransactionEtat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity/TypeCommissionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/facade/CommissionInfra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/impl/CommissionInfraImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/main/resources/messages_fr.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commission-service/src/test/java/com/example/commissionservice/CommissionServiceApplicationTests.java" afterDir="false" />
+    <list default="true" id="e6460a5d-87a8-4644-812f-626c55205c81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/BourseServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/ActionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/EntrepriseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/PriceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/PriceHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/SecteurDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/util/Processinjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/ws/ActionRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcessInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Entreprise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Secteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionEtat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/AbstractInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/AbstractInfraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/messaging/LocalMessageReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/messaging/LocalMessageReaderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/dao/ActionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/ActionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionEtat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/facade/ActionInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/impl/ActionInfraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/ActionnaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/test/java/com/trading/action/bourseservice/BourseServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/PriceHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commission-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/trading/action/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/trading/action/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/PriceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/PriceHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/SecteurDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/util/Processinjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/EntrepriseRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/PriceRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/ws/SecteurRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcessInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/delete/EntrepriseDeleteProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Secteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/history/PriceHistoryByDateAndEntrepriseProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/EntrepriseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/PriceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/dao/SecteurDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/PriceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/SecteurEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/EntrepriseInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/PriceInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/facade/SecteurInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/SecteurInfraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/FallBackMethodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/com/trading/action/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/dailycodebuffer/hystrix/dashboard/HystrixDashboardApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/test/java/com/dailycodebuffer/hystrix/dashboard/HystrixDashboardApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/promotheus-grafana/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_6_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_10_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_10_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_stoyanr_evictor_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_69.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_x_stream_mxparser_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_54.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_54.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_54.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_68.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_68.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_32_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_3_38_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_48.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trading-action.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka Server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka Server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/BourseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/ActionDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/ActionnaireDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Actionnaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CommissionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Commission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CommissionIntermediareDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CommissionIntermediare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CompteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/CompteTypeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CompteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/EntrepriseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/dto/EntrepriseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/IntermediareDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Intermediare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/PriceDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionEtatDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/dto/TransactionTypeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/util/Processinjection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/ws/EntrepriseRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/application/ws/PriceRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/AbstractProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/AbstractProcessInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/core/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/entreprise/create/EntrepriseCreateInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/entreprise/create/EntrepriseCreateProcessImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Actionnaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Actionnaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Commission.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Commission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CommissionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CommissionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CommissionIntermediare.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CommissionIntermediare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/CompteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/CompteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Entreprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Entreprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Intermediare.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Intermediare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Price.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Price.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionEtat.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionEtat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/pojo/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/pojo/TransactionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/domain/price/change/PriceChangeProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/domain/price/change/PriceChangeProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/AbstractInfra.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/AbstractInfra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/AbstractInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/AbstractInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/messaging/LocalMessageReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/messaging/LocalMessageReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/core/messaging/LocalMessageReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/core/messaging/LocalMessageReaderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/dao/EntrepriseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/dao/PriceDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/EntrepriseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/entity/EntrepriseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/entity/PriceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/facade/EntrepriseInfra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/facade/PriceInfra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/impl/EntrepriseInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/EntrepriseInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourse/infra/impl/PriceInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/infra/impl/PriceInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/test/java/com/trading/action/bourse/BourseServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/test/java/com/trading/action/entreprise/BourseServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/dto/ActionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/dto/ActionDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/util/Processinjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/util/Processinjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionnaireRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionnaireRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/CompteRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/CompteRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/CompteTypeRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/CompteTypeRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/core/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/core/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Actionnaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Actionnaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Price.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Price.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/portefeuille/PortefeuilleProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/portefeuille/PortefeuilleProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/entity/CompteTypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/entity/CompteTypeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/facade/ActionInfra.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/facade/ActionInfra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/required/EntrepriseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/required/EntrepriseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="JPA Structure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="JPA Structure" value="true" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectId" id="22BVH5zFxMQ5OFLnFyKj9l9DXux" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/commission-service/src/main/resources" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/commission-service/src/main/resources" />
-      <recent name="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/core" />
-      <recent name="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/core" />
-      <recent name="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/infra/entity" />
-      <recent name="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/domain/pojo" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.commissionservice.application.utils" />
-      <recent name="com.example.commissionservice.domain.pojo" />
-      <recent name="com.example.commissionservice.infra.entity" />
-      <recent name="com.example.commissionservice.application.config" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.CommissionServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bourse-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourse.BourseServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourseservice.BourseServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,9 +519,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntrepriseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="entreprise-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.entreprise.EntrepriseServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrix-dashboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dailycodebuffer.hystrix.dashboard.HystrixDashboardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,26 +562,8 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="" />
-      <created>1639310881817</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1639310881817</updated>
-      <workItem from="1639310884310" duration="1296000" />
-      <workItem from="1639411200218" duration="3639000" />
-      <workItem from="1639432202971" duration="2450000" />
-      <workItem from="1639487160887" duration="791000" />
-      <workItem from="1639581214618" duration="64000" />
-      <workItem from="1639690203696" duration="13419000" />
-      <workItem from="1639921612526" duration="15529000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -242,8 +576,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

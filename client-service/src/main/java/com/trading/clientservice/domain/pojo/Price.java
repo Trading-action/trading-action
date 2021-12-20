@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.time.Instant;
 
 public class Price {
-   private Instant createdAt;
-  private   BigDecimal prix;
+    private Instant createdAt;
+    private BigDecimal prix;
 
     public Instant getCreatedAt() {
         return createdAt;
