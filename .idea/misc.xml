@@ -4,12 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Eureka Server/pom.xml" />
-        <option value="$PROJECT_DIR$/bourse-service/pom.xml" />
         <option value="$PROJECT_DIR$/client-service/pom.xml" />
         <option value="$PROJECT_DIR$/intermediaire-service/pom.xml" />
         <option value="$PROJECT_DIR$/entreprise-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/bourse-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JavaSE-11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11 (2)" project-jdk-type="JavaSDK" />
 </project>
