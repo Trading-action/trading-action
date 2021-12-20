@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/client-service/client-service.iml" filepath="$PROJECT_DIR$/client-service/client-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/entreprise-service/entreprise-service.iml" filepath="$PROJECT_DIR$/entreprise-service/entreprise-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eureka Server/eureka-server.iml" filepath="$PROJECT_DIR$/Eureka Server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/intermediaire-service/intermediaire-service.iml" filepath="$PROJECT_DIR$/intermediaire-service/intermediaire-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/trading-action.iml" filepath="$PROJECT_DIR$/.idea/trading-action.iml" />
     </modules>

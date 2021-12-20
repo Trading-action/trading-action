@@ -9,14 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="intermediaire-service" />
         <module name="eureka-server" />
+        <module name="gateway" />
         <module name="client-service" />
         <module name="entreprise-service" />
+        <module name="hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client-service" target="11" />
       <module name="entreprise-service" target="11" />
       <module name="eureka-server" target="11" />
+      <module name="gateway" target="11" />
+      <module name="hystrix-dashboard" target="11" />
       <module name="intermediaire-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -25,6 +29,8 @@
       <module name="client-service" options="-parameters" />
       <module name="entreprise-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
       <module name="intermediaire-service" options="-parameters" />
     </option>
   </component>
