@@ -12,8 +12,13 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: 'spring-boot'
-    metrics_path: '/api/v1/actuator/prometheus'
+  - job_name: 'entreprise-service'
+    metrics_path: '/api/v1/entreprise-service/actuator/prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['192.168.43.181:8082','192.168.43.181:8083']
+      - targets: ['192.168.137.1:8083']
+  - job_name: 'client-service'
+    metrics_path: '/api/v1/client-service/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.137.1:8082']
