@@ -47,7 +47,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_116.xml" afterDir="false" />
+=======
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_annotations_1_7_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circuitbreaker_1_7_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circularbuffer_1_7_0.xml" afterDir="false" />
@@ -87,12 +90,37 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_0_10_2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_match_0_10_2.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_0_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vavr_vavr_match_0_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_aws_brave_propagation_aws_0_21_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_context_slf4j_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_streams_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_messaging_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_mongodb_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_rpc_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_brave_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_metrics_micrometer_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_activemq_client_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_amqp_client_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_kafka_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_23_0.xml" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_14.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_14.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
@@ -103,6 +131,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_38.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_38.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_7.xml" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
@@ -128,9 +160,12 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_13.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_core_1_5_13.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webflux_ui_1_5_13.xml" afterDir="false" />
+=======
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_4_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_4_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_4_RELEASE.xml" afterDir="false" />
@@ -151,6 +186,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_circuitbreaker_resilience4j_2_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_5_RELEASE.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_0.xml" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_server_3_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_2_2_5_RELEASE.xml" afterDir="false" />
@@ -162,9 +201,22 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_dashboard_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_2_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_5_RELEASE.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_circuitbreaker_reactor_resilience4j_2_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_5_RELEASE.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_autoconfigure_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_brave_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_instrumentation_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_circuitbreaker_reactor_resilience4j_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_3_1_0.xml" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_3_1_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_2_RELEASE.xml" afterDir="false" />
@@ -173,6 +225,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_2_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_dashboard_2_2_5_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_2_5_RELEASE.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_3_1_0.xml" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_3_4_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_9_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_9_RELEASE.xml" afterDir="false" />
@@ -188,11 +244,15 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_9_RELEASE.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_d3js_3_4_11.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_4_1.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_4_1_2.xml" afterDir="false" />
+=======
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b42000904f8f9395b5a80c439fa4c872c709978" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a430434947195cc25a10bb362ee1fc674371b0f" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aedd47adb451e105b43333b252e7adac40d7b5ae" afterDir="false" />
@@ -200,10 +260,66 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b85d826097ddcd0a32dfca3074a169eb6a75b3f1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb97f49d6764da4f8048fd1da01411076cadb3fe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/ActionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/EntrepriseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/PriceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/PriceHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/dto/SecteurDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/util/Processinjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/ws/ActionRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/AbstractProcessInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/core/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcessImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Actionnaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Commission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CommissionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CommissionIntermediare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Compte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/CompteType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Entreprise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Intermediare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Secteur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionEtat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/pojo/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/AbstractInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/AbstractInfraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/messaging/LocalMessageReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/core/messaging/LocalMessageReaderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/dao/ActionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/ActionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionEtat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/entity/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/facade/ActionInfra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/impl/ActionInfraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/ActionnaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" afterDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" afterDir="false" />
@@ -215,6 +331,19 @@
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,6 +367,9 @@
         <entry key="JPA Inspector" value="true" />
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
@@ -245,6 +377,9 @@
         <entry key="JPA Inspector" value="false" />
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -262,12 +397,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="jdk.selected.JAVA_MODULE" value="JavaSE-11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hystrix-dashboard" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice\domain" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice\infra\entity" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\resources" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.trading.action.bourseservice.application.dto" />
+      <recent name="com.trading.action.bourseservice.infra.required" />
+      <recent name="com.trading.action.bourseservice.application.ws" />
+      <recent name="com.trading.action.bourseservice.infra.impl" />
+      <recent name="com.trading.action.bourseservice.infra.facade" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -276,6 +433,7 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.ClientServiceApplication">
     <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.trading.action.gateway.GatewayApplication" />
@@ -286,11 +444,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+  <component name="RunManager" selected="Spring Boot.BourseServiceApplication">
+    <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bourse-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourseservice.BourseServiceApplication" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <module name="client-service" />
       <extension name="coverage">
         <pattern>
@@ -317,13 +485,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
+=======
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trading.action.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hystrix-dashboard" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dailycodebuffer.hystrix.dashboard.HystrixDashboardApplication" />
@@ -331,6 +511,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
     <configuration name="IntermediaireServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="intermediaire-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.intermediaireservice.IntermediaireServiceApplication" />
@@ -343,6 +525,7 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.IntermediaireServiceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+<<<<<<< HEAD
       <item itemvalue="Spring Boot.HystrixDashboardApplication" />
       <item itemvalue="Spring Boot.EntrepriseServiceApplication" />
       <item itemvalue="Spring Boot.ClientServiceApplication" />
@@ -351,6 +534,13 @@
       <list>
         <item itemvalue="Spring Boot.ClientServiceApplication" />
         <item itemvalue="Application.GatewayApplication" />
+=======
+      <item itemvalue="Spring Boot.BourseServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
       </list>
     </recent_temporary>
   </component>
@@ -370,9 +560,16 @@
       <workItem from="1639559654461" duration="602000" />
       <workItem from="1639913058084" duration="640000" />
       <workItem from="1639914247791" duration="12041000" />
+<<<<<<< HEAD
       <workItem from="1639933422521" duration="5386000" />
       <workItem from="1639946910296" duration="1603000" />
       <workItem from="1639990856758" duration="10651000" />
+=======
+      <workItem from="1639933422521" duration="2674000" />
+      <workItem from="1639989339543" duration="98000" />
+      <workItem from="1639991412497" duration="140000" />
+      <workItem from="1639995932141" duration="4866000" />
+>>>>>>> 29b8004c3ba08719c0703c1b05cb7ad004055557
     </task>
     <servers />
   </component>
