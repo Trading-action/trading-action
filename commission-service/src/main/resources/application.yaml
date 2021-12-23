@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: COMMISSION-SERVICE
+
+  #h2:
+  #  console.path: /h2-console
+  #  console.enabled: true
+  #  console.settings.trace: false
+  #  spring.h2.console.settings.web-allow-others: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/commission
+    username: mac
+    password:
+    driverClassName: org.postgresql.Driver
+
+server:
+  port: 8089
+
+
+zipkin:
+  base-url: http://localhost:9411/

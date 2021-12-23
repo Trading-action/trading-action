@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="81499f77-1765-43cc-a043-3a3aebd4b01e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -137,6 +138,31 @@
       <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/application/config/CorsConfig.java" afterDir="false" />
+=======
+    <list default="true" id="25e82ce8-d8ab-43ad-abd5-ab5479e8daf5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/ws/CommissionRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/ws/CommissionRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" beforeDir="false" afterPath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" afterDir="false" />
+>>>>>>> dfc4797806c04c30aa26f99d8e0c97999ddd7132
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,19 +172,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="JPA Structure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="JPA Structure" value="true" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectId" id="22YyjI76cqvFZpVkVYsA8mqC75g" />
+  <component name="ProjectId" id="22ZFzJtj0zELVHuSv8XasXBz8ba" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -171,16 +185,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/intermediaire-service" />
-    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.EntrepriseServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -193,6 +199,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager" selected="Spring Boot.CommissionServiceApplication">
+>>>>>>> dfc4797806c04c30aa26f99d8e0c97999ddd7132
     <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bourse-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourseservice.BourseServiceApplication" />
@@ -203,6 +212,13 @@
     <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="client-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.clientservice.ClientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommissionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="commission-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commissionservice.CommissionServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,15 +269,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81499f77-1765-43cc-a043-3a3aebd4b01e" name="Changes" comment="" />
-      <created>1640028949258</created>
+      <changelist id="25e82ce8-d8ab-43ad-abd5-ab5479e8daf5" name="Changes" comment="" />
+      <created>1640037467987</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1640028949258</updated>
       <workItem from="1640028951526" duration="97000" />
       <workItem from="1640029063683" duration="1426000" />
       <workItem from="1640035924507" duration="1718000" />
       <workItem from="1640278261817" duration="4896000" />
+=======
+      <updated>1640037467987</updated>
+      <workItem from="1640037474676" duration="2321000" />
+>>>>>>> dfc4797806c04c30aa26f99d8e0c97999ddd7132
     </task>
     <servers />
   </component>
