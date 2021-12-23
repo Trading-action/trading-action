@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1b1c8e7-3aa4-4cd1-9fce-dfcba0f0603d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/promotheus-grafana-zipkin/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promotheus-grafana-zipkin/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commission-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotheus-grafana/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640284182414</updated>
-      <workItem from="1640284189631" duration="695000" />
+      <workItem from="1640284189631" duration="3002000" />
     </task>
     <servers />
   </component>
