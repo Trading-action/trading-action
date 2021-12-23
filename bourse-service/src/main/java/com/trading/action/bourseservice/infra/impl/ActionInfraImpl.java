@@ -74,38 +74,30 @@ public class ActionInfraImpl extends AbstractInfraImpl implements ActionInfra {
     }
 
     @Override
-    public List<Action> findByActionnaireUsername(String username) {
-
-        List<ActionEntity> actionEntities = actionDao.findByActionnaireUsername(username);
+    public List<Action> findByUsernameActionnaire(String username) {
+        List<ActionEntity> actionEntities = actionDao.findByUsernameActionnaire(username);
         log.error("findByActionnaireUsername {}", actionEntities);
-        List<Action> actions = new ArrayList<>();
-
-        actions = actionEntities.stream().map((actionEntity -> {
+       return actionEntities.stream().map((actionEntity -> {
             Action action = new Action();
             BeanUtils.copyProperties(actionEntity, action);
             return action;
         })).collect(Collectors.toList());
-
-        return actions;
     }
 
     @Override
-    public List<Action> findByRefEntrepriseAndActionnaireUsername(String refEnreprise, String username) {
-        List<ActionEntity>  actionEntities = actionDao.findByRefEntrepriseAndActionnaireUsername(refEnreprise,username);
-        List<Action> actions = new ArrayList<>();
-
-        actions = actionEntities.stream().map((actionEntity -> {
+    public List<Action> findByReferenceEntrepriseAndAndUsernameActionnaire(String referecneEnreprise, String username) {
+        List<ActionEntity>  actionEntities = actionDao.findByReferenceEntrepriseAndAndUsernameActionnaire(referecneEnreprise,username);
+        return actionEntities.stream().map((actionEntity -> {
             Action action = new Action();
             BeanUtils.copyProperties(actionEntity, action);
             return action;
         })).collect(Collectors.toList());
-
-        return actions;
     }
-
 
     @Override
-    public List<String> findEntreprises(String username) {
-        return actionDao.findEntreprises(username);
+    public List<String> findEntreprisesByUsernameActionnaire(String username) {
+        return actionDao.findEntreprisesByUsernameActionnaire(username);
     }
+
+
 }

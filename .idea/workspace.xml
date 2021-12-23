@@ -4,14 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/EntrepriseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/required/BourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/BourseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/BourseServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/util/Processinjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/util/Processinjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/ws/ActionRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/application/ws/ActionRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/domain/create/ActionCreateProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/dao/ActionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/dao/ActionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/facade/ActionInfra.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/facade/ActionInfra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/impl/ActionInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/impl/ActionInfraImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/ActionnaireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/ActionnaireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bourse-service/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/dto/ActionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/dto/ActionDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/util/Processinjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/util/Processinjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionnaireRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/application/ws/ActionnaireRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/action/create/ActionCreateProcessImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/pojo/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/portefeuille/PortefeuilleProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/domain/portefeuille/PortefeuilleProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/dao/ActionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/entity/ActionEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/entity/ActionnaireEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/entity/ActionnaireEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/facade/ActionInfra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionInfraImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" afterDir="false" />
+=======
     <list default="true" id="c1b1c8e7-3aa4-4cd1-9fce-dfcba0f0603d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/commission-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" beforeDir="false" />
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
+>>>>>>> dcb2fbee9336c72e9874ef60b854196a99d32b34
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -36,10 +87,36 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server" />
+    <property name="nodejs_package_manager_path" value="npm" />
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+<<<<<<< HEAD
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice\domain" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice\infra\entity" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\resources" />
+      <recent name="C:\Users\ok\OneDrive\Bureau\s5\ms\Trading action\bourse-service\src\main\java\com\trading\action\bourseservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.trading.action.bourseservice.infra.required" />
+      <recent name="com.trading.action.bourseservice.application.dto" />
+      <recent name="com.trading.action.bourseservice.application.ws" />
+      <recent name="com.trading.action.bourseservice.infra.impl" />
+      <recent name="com.trading.action.bourseservice.infra.facade" />
+    </key>
+  </component>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -104,6 +181,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+    <list>
+      <item itemvalue="Spring Boot.ClientServiceApplication" />
+      <item itemvalue="Spring Boot.EntrepriseServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.IntermediaireServiceApplication" />
+      <item itemvalue="Spring Boot.BourseServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+      </list>
+    </recent_temporary>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,8 +205,30 @@
       <created>1640284182414</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1639310881817</updated>
+      <workItem from="1639310884310" duration="1581000" />
+      <workItem from="1639384794439" duration="337000" />
+      <workItem from="1639385953800" duration="2576000" />
+      <workItem from="1639405396881" duration="10701000" />
+      <workItem from="1639428304815" duration="10503000" />
+      <workItem from="1639559654461" duration="602000" />
+      <workItem from="1639913058084" duration="640000" />
+      <workItem from="1639914247791" duration="12041000" />
+      <workItem from="1639933422521" duration="2674000" />
+      <workItem from="1639989339543" duration="98000" />
+      <workItem from="1639991412497" duration="140000" />
+      <workItem from="1639995932141" duration="6518000" />
+      <workItem from="1640276225337" duration="60000" />
+      <workItem from="1640276301631" duration="12232000" />
+=======
       <updated>1640284182414</updated>
+<<<<<<< HEAD
       <workItem from="1640284189631" duration="3002000" />
+=======
+      <workItem from="1640284189631" duration="695000" />
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
+>>>>>>> dcb2fbee9336c72e9874ef60b854196a99d32b34
     </task>
     <servers />
   </component>

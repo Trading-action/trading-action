@@ -6,8 +6,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "ACTIONNAIRE-SERVICE")
+@FeignClient(name = "CLIENT-SERVICE")
 public interface ActionnaireService {
-    @GetMapping("")
-    Result<Actionnaire, Actionnaire> findByUsername(@PathVariable String username);
+    @GetMapping("/api/v1/actionnaires/{username}")
+    Actionnaire findByUsername(@PathVariable String username);
 }
