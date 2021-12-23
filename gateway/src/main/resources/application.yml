@@ -7,25 +7,53 @@ spring:
     name: API-GATEWAY
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: CLIENT-SERVICE
           uri: lb://CLIENT-SERVICE
           predicates:
-            - Path=/api/v1/actionnaires/**,/api/v1/actions/**,/api/v1/comptes/**,/api/v1/type-comptes/**
+            - Path=/api/v1/client-service/**
           filters:
             - name: CircuitBreaker
               args:
                 name: CLIENT-SERVICE
                 fallbackuri: forward:/clientServiceFallBack
+        - id: COMMISSION-SERVICE
+          uri: lb://COMMISSION-SERVICE
+          predicates:
+            - Path=/api/v1/commission-service/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: COMMISSION-SERVICE
+                fallbackuri: forward:/commissionServiceFallBack
         - id: ENTREPRISE-SERVICE
           uri: lb://ENTREPRISE-SERVICE
           predicates:
-            - Path=/api/v1/entreprise/**,/api/v1/price/**,/api/v1/secteur/**
+            - Path=/api/v1/entreprise-service/**
           filters:
             - name: CircuitBreaker
               args:
                 name: ENTREPRISE-SERVICE
                 fallbackuri: forward:/entrepriseServiceFallBack
+        - id: openapi
+          uri: http://localhost:${server.port}
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /$\{path}/v3/api-docs
+springdoc:
+  swagger-ui:
+    use-root-path: true
+    urls:
+      - name: entreprise
+        url: /v3/api-docs/api/v1/entreprise-service/
+      - name: client
+        url: /v3/api-docs/api/v1/client-service/
+      - name: commission
+        url: /v3/api-docs/api/v1/commission-service/
 
 hystrix:
   command:

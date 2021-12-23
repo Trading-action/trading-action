@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/bourse-service/src/main/java/com/trading/action/bourseservice/infra/required/EntrepriseService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/required/BourseService.java" afterDir="false" />
@@ -34,12 +35,27 @@
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/facade/ActionInfra.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionInfraImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/infra/impl/ActionnaireInfraImpl.java" afterDir="false" />
+=======
+    <list default="true" id="c1b1c8e7-3aa4-4cd1-9fce-dfcba0f0603d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/promotheus-grafana-zipkin/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/promotheus-grafana-zipkin/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commission-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" beforeDir="false" />
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -48,51 +64,42 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
-        <entry key="JPA Inspector" value="true" />
-        <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Inspector" value="false" />
-        <entry key="JPA Palette" value="false" />
-        <entry key="JPA Structure" value="false" />
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="JPA Structure" value="true" />
       </map>
     </option>
   </component>
-  <component name="ProjectId" id="22BVH5zFxMQ5OFLnFyKj9l9DXux" />
+  <component name="ProjectId" id="22hK224cGZIMTDGWpaB9aNIxhbL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server" />
     <property name="nodejs_package_manager_path" value="npm" />
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+<<<<<<< HEAD
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -111,6 +118,8 @@
       <recent name="com.trading.action.bourseservice.infra.facade" />
     </key>
   </component>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -118,7 +127,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BourseServiceApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bourse-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.bourseservice.BourseServiceApplication" />
@@ -133,11 +142,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommissionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="commission-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commissionservice.CommissionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EntrepriseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="entreprise-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.entreprise.EntrepriseServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,14 +170,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trading.action.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.trading.action.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,6 +184,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <list>
       <item itemvalue="Spring Boot.ClientServiceApplication" />
       <item itemvalue="Spring Boot.EntrepriseServiceApplication" />
@@ -182,14 +198,17 @@
         <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
+=======
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8ae6396-b44a-480a-9298-1de3e3310980" name="Changes" comment="" />
-      <created>1639310881817</created>
+      <changelist id="c1b1c8e7-3aa4-4cd1-9fce-dfcba0f0603d" name="Changes" comment="" />
+      <created>1640284182414</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1639310881817</updated>
       <workItem from="1639310884310" duration="1581000" />
       <workItem from="1639384794439" duration="337000" />
@@ -205,6 +224,10 @@
       <workItem from="1639995932141" duration="6518000" />
       <workItem from="1640276225337" duration="60000" />
       <workItem from="1640276301631" duration="12232000" />
+=======
+      <updated>1640284182414</updated>
+      <workItem from="1640284189631" duration="695000" />
+>>>>>>> b0c6f2369eacad0d8684d9aeaa0dcaf40ce49a26
     </task>
     <servers />
   </component>
@@ -221,6 +244,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
