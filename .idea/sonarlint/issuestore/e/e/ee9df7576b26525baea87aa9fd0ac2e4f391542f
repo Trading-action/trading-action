@@ -1,8 +1,0 @@
-
-[	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Âüï¸
-X
-java:S3252"BUse static access with "java.util.ResourceBundle" for "getBundle".(ß¯ˆª
-T
-java:S4719@"9Replace charset name argument with StandardCharsets.UTF_8(Şäãöûÿÿÿÿ
-Y
-java:S4719@">Replace charset name argument with StandardCharsets.ISO_8859_1(Şäãöûÿÿÿÿ
