@@ -5,36 +5,20 @@ import java.math.BigDecimal;
 import java.time.Instant;
 
 public class Action {
-    private String ref;
+    private String reference;
     private Instant createdAt;
     private Instant updatedAt;
     private boolean inBourse;
-    private String refEntreprise;
+    private String referenceEntreprise;
     private BigDecimal prix;
-    private Actionnaire actionnaire;
+    private String referenceActionnaire;
 
-    public Actionnaire getActionnaire() {
-        return actionnaire;
+    public String getReference() {
+        return reference;
     }
 
-    public void setActionnaire(Actionnaire actionnaire) {
-        this.actionnaire = actionnaire;
-    }
-
-    public BigDecimal getPrix() {
-        return prix;
-    }
-
-    public void setPrix(BigDecimal prix) {
-        this.prix = prix;
-    }
-
-    public String getRef() {
-        return ref;
-    }
-
-    public void setRef(String ref) {
-        this.ref = ref;
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 
     public Instant getCreatedAt() {
@@ -61,11 +45,27 @@ public class Action {
         this.inBourse = inBourse;
     }
 
-    public String getRefEntreprise() {
-        return refEntreprise;
+    public String getReferenceEntreprise() {
+        return referenceEntreprise;
     }
 
-    public void setRefEntreprise(String refEntreprise) {
-        this.refEntreprise = refEntreprise;
+    public void setReferenceEntreprise(String referenceEntreprise) {
+        this.referenceEntreprise = referenceEntreprise;
+    }
+
+    public BigDecimal getPrix() {
+        return prix;
+    }
+
+    public void setPrix(BigDecimal prix) {
+        this.prix = prix;
+    }
+
+    public String getReferenceActionnaire() {
+        return referenceActionnaire;
+    }
+
+    public void setReferenceActionnaire(String referenceActionnaire) {
+        this.referenceActionnaire = referenceActionnaire;
     }
 }

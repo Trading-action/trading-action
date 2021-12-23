@@ -61,7 +61,7 @@ public class ActionnaireInfraImpl extends AbstractInfraImpl implements Actionnai
             for (int i = 0; i < actions.size(); i++) {
                 PriceHistory priceHistory = new PriceHistory();
                 priceHistory.setDate(actions.get(i).getCreatedAt());
-                priceHistory.setEntrepriseLibelle(actions.get(i).getRefEntreprise());
+                priceHistory.setEntrepriseLibelle(actions.get(i).getReferenceEntreprise());
                 Result<List<Price>, List<Price>> result = entrepriseService.findPrixHestoryByDateAndEntreprise(priceHistory);
                 log.error("prices " + result.toString());
                 if (result.getOutput() != null) {
