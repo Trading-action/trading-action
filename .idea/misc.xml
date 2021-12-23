@@ -3,13 +3,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/bourse-service/pom.xml" />
+        <option value="$PROJECT_DIR$/client-service/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/entreprise-service/pom.xml" />
         <option value="$PROJECT_DIR$/Eureka Server/pom.xml" />
-        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
-        <option value="$PROJECT_DIR$/client-service/pom.xml" />
-        <option value="$PROJECT_DIR$/bourse-service/pom.xml" />
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/intermediaire-service/pom.xml" />
       </list>
     </option>

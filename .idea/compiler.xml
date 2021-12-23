@@ -2,18 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bourse-service" />
         <module name="config-server" />
-        <module name="hystrix-dashboard" />
         <module name="intermediaire-service" />
         <module name="eureka-server" />
         <module name="gateway" />
-        <module name="entreprise-service" />
         <module name="client-service" />
+        <module name="entreprise-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,7 +35,6 @@
       <module name="entreprise-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="hystrix-dashboard" options="-parameters" />
       <module name="intermediaire-service" options="-parameters" />
     </option>
   </component>
