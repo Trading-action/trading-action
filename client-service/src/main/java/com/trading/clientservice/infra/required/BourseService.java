@@ -11,9 +11,9 @@ import java.util.List;
 @FeignClient(name = "BOURSE-SERVICE")
 public interface BourseService {
 
-    @GetMapping("/api/v1/actions/entreprise/{referecneEnreprise}/actionnaire/{username}")
+    @GetMapping("/api/v1/bourse-service/actions/entreprise/{referecneEnreprise}/actionnaire/{username}")
     List<Action> findByReferenceEntrepriseAndAndUsernameActionnaire(@PathVariable String referecneEnreprise, @PathVariable String username);
 
-    @GetMapping("/api/v1/actions/actionnaire/{username}/entreprises")
+    @GetMapping("/api/v1/bourse-service/actions/actionnaire/{username}/entreprises")
     List<String> findEntreprisesByUsernameActionnaire(@PathVariable String username);
 }

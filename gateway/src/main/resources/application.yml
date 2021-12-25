@@ -38,6 +38,15 @@ spring:
               args:
                 name: ENTREPRISE-SERVICE
                 fallbackuri: forward:/entrepriseServiceFallBack
+        - id: BOURSE-SERVICE
+          uri: lb://BOURSE-SERVICE
+          predicates:
+            - Path=/api/v1/bourse-service/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: BOURSE-SERVICE
+                fallbackuri: forward:/bourseServiceFallBack
         - id: openapi
           uri: http://localhost:${server.port}
           predicates:
@@ -54,6 +63,8 @@ springdoc:
         url: /v3/api-docs/api/v1/client-service/
       - name: commission
         url: /v3/api-docs/api/v1/commission-service/
+      - name: bourse
+        url: /v3/api-docs/api/v1/bourse-service/
 
 hystrix:
   command:
