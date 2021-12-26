@@ -21,9 +21,6 @@ public class ActionnaireEntity extends AbstractEntity {
     @Column(unique = true)
     String username;
 
-    @OneToMany(mappedBy = "actionnaire")
-    List<ActionEntity> actions;
-
     @OneToOne
     CompteEntity compteEntity;
 

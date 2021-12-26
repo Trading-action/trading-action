@@ -15,13 +15,13 @@ import java.util.List;
 @FeignClient(name = "ENTREPRISE-SERVICE")
 public interface EntrepriseService {
 
-    @GetMapping("/api/v1/price/history/")
+    @GetMapping("/api/v1/entreprise-service/price/history/")
     Result<List<Price>, List<Price>> findPrixHestoryByDateAndEntreprise(@RequestBody PriceHistory priceHistory);
 
-    @GetMapping("/api/v1/entreprise/{libelle}/")
+    @GetMapping("/api/v1/entreprise-service/entreprise/{libelle}/")
      Result<String,String> findByLibelle(@PathVariable String libelle);
 
-    @GetMapping("/api/v1/entreprise/{company}/Percentage")
+    @GetMapping("/api/v1/entreprise-service/entreprise/{company}/Percentage")
      Result<BigDecimal,BigDecimal> getSharePercentage(@PathVariable("company") String company, @RequestParam(value = "shares", required = false) BigDecimal shares);
 
 

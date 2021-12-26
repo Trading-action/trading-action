@@ -12,12 +12,12 @@ import java.util.List;
 public interface ActionDao extends JpaRepository<ActionEntity, Long> {
     ActionEntity findByReference(String ref);
 
-    List<ActionEntity> findByActionnaireUsername(String username);
+    List<ActionEntity> findByUsernameActionnaire(String username);
 
     int deleteByReference(String ref);
 
     @Query("SELECT a.referenceEntreprise FROM ActionEntity a  WHERE a.usernameActionnaire=?1")
-    List<String> findEntreprises(String username);
+    List<String> findEntreprisesByUsernameActionnaire(String username);
 
-    List<ActionEntity> findByRefEntrepriseAndActionnaireUsername(String refEnreprise, String username);
+    List<ActionEntity> findByReferenceEntrepriseAndAndUsernameActionnaire(String referecneEnreprise, String username);
 }

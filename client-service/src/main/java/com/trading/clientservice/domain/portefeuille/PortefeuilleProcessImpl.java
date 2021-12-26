@@ -5,8 +5,8 @@ import com.trading.clientservice.domain.core.AbstractProcessImpl;
 import com.trading.clientservice.domain.core.Result;
 import com.trading.clientservice.domain.pojo.Action;
 import com.trading.clientservice.domain.pojo.Portefeuille;
-import com.trading.clientservice.infra.facade.ActionInfra;
 import com.trading.clientservice.infra.facade.ActionnaireInfra;
+import com.trading.clientservice.infra.required.BourseService;
 import com.trading.clientservice.infra.required.EntrepriseService;
 
 import java.math.BigDecimal;
@@ -15,14 +15,14 @@ import java.util.List;
 
 public class PortefeuilleProcessImpl extends AbstractProcessImpl<PortefeuilleInput> implements PortefeuilleProcess {
 
-    private final ActionInfra actionInfra;
     private final ActionnaireInfra actionnaireInfra;
     private final EntrepriseService entrepriseService;
+    private final BourseService bourseService;
 
-    public PortefeuilleProcessImpl(EntrepriseService entrepriseService, ActionInfra actionInfra, ActionnaireInfra actionnaireInfra) {
-        this.actionInfra = actionInfra;
+    public PortefeuilleProcessImpl( BourseService bourseService,EntrepriseService entrepriseService, ActionnaireInfra actionnaireInfra) {
         this.actionnaireInfra = actionnaireInfra;
         this.entrepriseService = entrepriseService;
+        this.bourseService = bourseService;
     }
 
 
@@ -32,30 +32,22 @@ public class PortefeuilleProcessImpl extends AbstractProcessImpl<PortefeuilleInp
         if (actionnaireInfra.findByUsername(portefeuilleInput.getUsername()) == null) {
             result.addErrorMessage(actionnaireInfra.getMessage("actionnaire.not_founded"));
         }
-
-        List<Action> actions = actionInfra.findByActionnaireUsername(portefeuilleInput.getUsername());
-
-        if (actions.isEmpty()) {
-            result.addErrorMessage(actionnaireInfra.getMessage("portefeuille.actions.empty"));
-        }
-
-
     }
 
     @Override
     public void run(PortefeuilleInput portefeuilleInput, Result result) {
-        List<String> entreprises = actionInfra.findEntreprises(portefeuilleInput.getUsername());
+        List<String> entreprises = bourseService.findEntreprisesByUsernameActionnaire(portefeuilleInput.getUsername());
         List<Portefeuille> portefeuilles = new ArrayList<>();
         for (int i = 0; i < entreprises.size(); i++) {
-            List<Action> actions = actionInfra.findByRefEntrepriseAndActionnaireUsername(entreprises.get(i), portefeuilleInput.getUsername());
+            List<Action> actions = bourseService.findByReferenceEntrepriseAndAndUsernameActionnaire(entreprises.get(i), portefeuilleInput.getUsername());
             Portefeuille portefeuille = actionnaireInfra.getPortefeuilles(actions);
             if (portefeuille != null) {
 
                 portefeuille.setPrix(actions.stream().map(Action::getPrix).reduce(BigDecimal.ZERO, BigDecimal::add));
 
-                portefeuille.setNomEnreprise(actions.get(0).getRefEntreprise());
+                portefeuille.setNomEnreprise(actions.get(0).getReferenceEntreprise());
 
-                portefeuille.setPercentage(entrepriseService.getSharePercentage(actions.get(0).getRefEntreprise(), new BigDecimal(actions.size())).getOutput().doubleValue());
+                portefeuille.setPercentage(entrepriseService.getSharePercentage(actions.get(0).getReferenceEntreprise(), new BigDecimal(actions.size())).getOutput().doubleValue());
 
                 portefeuilles.add(portefeuille);
             }

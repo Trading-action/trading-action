@@ -21,11 +21,11 @@ public interface ActionInfra extends AbstractInfra {
 
     int update(Action action);
 
-    List<Action> findByActionnaireUsername(String username);
+    List<Action> findByUsernameActionnaire(String username);
 
-    List<Action> findByRefEntrepriseAndActionnaireUsername(String refEnreprise, String username);
+    List<Action> findByReferenceEntrepriseAndAndUsernameActionnaire(String referecneEnreprise, String username);
 
-    List<String> findEntreprises(String username);
+    List<String> findEntreprisesByUsernameActionnaire(String username);
 
 
 }

@@ -16,4 +16,10 @@ public class FallBackMethodController {
         return "entreprise Service is taking longer than Expected." +
                 " Please try again later";
     }
+
+    @GetMapping("/bourseServiceFallBack")
+    public String bourseServiceFallBackMethod() {
+        return "bourse Service is taking longer than Expected." +
+                " Please try again later";
+    }
 }

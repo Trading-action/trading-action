@@ -4,8 +4,10 @@ import com.trading.clientservice.application.dto.ActionnaireDto;
 import com.trading.clientservice.domain.actionnaire.create.ActionnaireCreateInput;
 import com.trading.clientservice.domain.actionnaire.create.ActionnaireCreateProcess;
 import com.trading.clientservice.domain.core.Result;
+import com.trading.clientservice.domain.pojo.Actionnaire;
 import com.trading.clientservice.domain.portefeuille.PortefeuilleInput;
 import com.trading.clientservice.domain.portefeuille.PortefeuilleProcess;
+import com.trading.clientservice.infra.facade.ActionnaireInfra;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +24,7 @@ public class ActionnaireRest {
 
    private  final ActionnaireCreateProcess actionnaireCreateProcess;
    private  final PortefeuilleProcess portefeuilleProcess;
+   private  final ActionnaireInfra actionnaireInfra;
 
     @Operation(summary = "save process ")
     @PostMapping("/")
@@ -38,6 +41,11 @@ public class ActionnaireRest {
         return portefeuilleProcess.execute(portefeuilleInput);
     }
 
+    @Operation(summary = "findByUsername ")
+    @GetMapping("/{username}")
+    public Actionnaire findByUsername(@PathVariable String username){
+       return  actionnaireInfra.findByUsername(username);
+    }
 
 
 }

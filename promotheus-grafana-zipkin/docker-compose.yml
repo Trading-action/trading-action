@@ -14,3 +14,7 @@ services:
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     image: prom/prometheus
+  zipkin:
+    ports:
+      - "9411:9411"
+    image: openzipkin/zipkin
