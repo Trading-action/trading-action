@@ -3,6 +3,6 @@ package com.example.commissionservice.application.dto;
 
 
 
-public enum TransactionTypeDto {
+public enum TransactionType {
     ACHAT,VENTE
 }

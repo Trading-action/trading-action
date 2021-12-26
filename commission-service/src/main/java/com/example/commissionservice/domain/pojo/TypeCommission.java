@@ -7,13 +7,33 @@ public class TypeCommission {
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
-    private String label;
-    private Instant applicationDateMin;
-    private Instant applicationDateMax;
-    private Compte compte;
-    private Float percentage;
-    private boolean tva;
-    private TransactionType operationType;
+    String label;
+    Instant applicationDateMin;
+    Instant applicationDateMax;
+    CompteType typeCompte;
+    Float percentage;
+    boolean tva;
+    double minimal;
+    String operationType;
+
+    public TypeCommission(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, CompteType typeCompte, Float percentage, boolean tva, double minimal, String operationType) {
+        this.id = id;
+        this.ref = ref;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.label = label;
+        this.applicationDateMin = applicationDateMin;
+        this.applicationDateMax = applicationDateMax;
+        this.typeCompte = typeCompte;
+        this.percentage = percentage;
+        this.tva = tva;
+        this.minimal = minimal;
+        this.operationType = operationType;
+    }
+
+    public TypeCommission() {
+
+    }
 
     public Long getId() {
         return id;
@@ -71,12 +91,12 @@ public class TypeCommission {
         this.applicationDateMax = applicationDateMax;
     }
 
-    public Compte getCompte() {
-        return compte;
+    public CompteType getTypeCompte() {
+        return typeCompte;
     }
 
-    public void setCompte(Compte compte) {
-        this.compte = compte;
+    public void setTypeCompte(CompteType typeCompte) {
+        this.typeCompte = typeCompte;
     }
 
     public Float getPercentage() {
@@ -95,11 +115,37 @@ public class TypeCommission {
         this.tva = tva;
     }
 
-    public TransactionType getOperationType() {
+    public String getOperationType() {
         return operationType;
     }
 
-    public void setOperationType(TransactionType operationType) {
+    public void setOperationType(String operationType) {
         this.operationType = operationType;
+    }
+
+    public double getMinimal() {
+        return minimal;
+    }
+
+    public void setMinimal(double minimal) {
+        this.minimal = minimal;
+    }
+
+    @Override
+    public String toString() {
+        return "TypeCommission{" +
+                "id=" + id +
+                ", ref='" + ref + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", label='" + label + '\'' +
+                ", applicationDateMin=" + applicationDateMin +
+                ", applicationDateMax=" + applicationDateMax +
+                ", typeCompte=" + typeCompte +
+                ", percentage=" + percentage +
+                ", tva=" + tva +
+                ", minimal=" + minimal +
+                ", operationType='" + operationType + '\'' +
+                '}';
     }
 }

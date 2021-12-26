@@ -1,71 +1,35 @@
 package com.example.commissionservice.application.dto;
 
 
+import com.example.commissionservice.domain.commission.calculate.CommissionCalculateInput;
+import com.example.commissionservice.domain.pojo.Action;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
 import java.time.Instant;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class ActionDto {
-
     private Long id;
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
     private ActionnaireDto actionnaire;
     private boolean inBourse;
+    private BigDecimal prix;
     private String refEntreprise;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public ActionDto(Long id, String ref, Instant createdAt, Instant updatedAt, boolean inBourse, BigDecimal prix, String refEntreprise) {
         this.id = id;
-    }
-
-    public String getRef() {
-        return ref;
-    }
-
-    public void setRef(String ref) {
         this.ref = ref;
-    }
-
-    public Instant getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Instant createdAt) {
         this.createdAt = createdAt;
-    }
-
-    public Instant getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
-    }
-
-    public ActionnaireDto getActionnaire() {
-        return actionnaire;
-    }
-
-    public void setActionnaire(ActionnaireDto actionnaire) {
-        this.actionnaire = actionnaire;
-    }
-
-    public boolean isInBourse() {
-        return inBourse;
-    }
-
-    public void setInBourse(boolean inBourse) {
         this.inBourse = inBourse;
-    }
-
-    public String getRefEntreprise() {
-        return refEntreprise;
-    }
-
-    public void setRefEntreprise(String refEntreprise) {
+        this.prix = prix;
         this.refEntreprise = refEntreprise;
     }
 }

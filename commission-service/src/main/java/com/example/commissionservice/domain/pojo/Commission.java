@@ -1,8 +1,5 @@
 package com.example.commissionservice.domain.pojo;
 
-import com.example.commissionservice.infra.entity.CommissionDetailEntity;
-
-import javax.persistence.OneToMany;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
@@ -16,6 +13,20 @@ public class Commission {
     private Instant updatedAt;
     private Instant dateCommission;
     private List<CommissionDetail> commissionDetails;
+
+    public Commission(Long id, String ref, BigDecimal totalPrice, Action action, Instant createdAt, Instant updatedAt, Instant dateCommission, List<CommissionDetail> commissionDetails) {
+        this.id = id;
+        this.ref = ref;
+        this.totalPrice = totalPrice;
+        this.action = action;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.dateCommission = dateCommission;
+        this.commissionDetails = commissionDetails;
+    }
+
+    public Commission() {
+    }
 
     public Long getId() {
         return id;

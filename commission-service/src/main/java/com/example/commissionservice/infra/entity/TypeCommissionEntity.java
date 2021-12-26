@@ -19,5 +19,18 @@ public class TypeCommissionEntity extends AbstractEntity {
     String refTypeCompte;
     Float percentage;
     boolean tva;
-    TransactionType operationType;
+    double minimal;
+    String operationType;
+
+    public TypeCommissionEntity(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, String refTypeCompte, Float percentage, boolean tva, double minimal, String operationType) {
+        super(id, ref, createdAt, updatedAt);
+        this.label = label;
+        this.applicationDateMin = applicationDateMin;
+        this.applicationDateMax = applicationDateMax;
+        this.refTypeCompte = refTypeCompte;
+        this.percentage = percentage;
+        this.tva = tva;
+        this.minimal = minimal;
+        this.operationType = operationType;
+    }
 }

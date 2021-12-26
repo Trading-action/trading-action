@@ -5,12 +5,38 @@ import java.math.BigDecimal;
 import java.time.Instant;
 
 public class Action {
+    private Long id;
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
     private boolean inBourse;
     private String refEntreprise;
     private BigDecimal prix;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Action() {
+    }
+
+    public Action(String ref) {
+        this.ref = ref;
+    }
+
+    public Action(Long id, String ref, Instant createdAt, Instant updatedAt, boolean inBourse, String refEntreprise, BigDecimal prix) {
+        this.id = id;
+        this.ref = ref;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.inBourse = inBourse;
+        this.refEntreprise = refEntreprise;
+        this.prix = prix;
+    }
 
 
     public BigDecimal getPrix() {
@@ -60,4 +86,6 @@ public class Action {
     public void setRefEntreprise(String refEntreprise) {
         this.refEntreprise = refEntreprise;
     }
+
+
 }

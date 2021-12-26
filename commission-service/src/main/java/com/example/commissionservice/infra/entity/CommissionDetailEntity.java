@@ -1,12 +1,15 @@
 package com.example.commissionservice.infra.entity;
 
 
+import com.example.commissionservice.domain.pojo.Commission;
+import com.example.commissionservice.domain.pojo.TypeCommission;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -19,7 +22,15 @@ import java.time.Instant;
 @Entity
 public class CommissionDetailEntity extends AbstractEntity {
     @OneToOne
-    TypeCommissionEntity typeCommission;
+    TypeCommissionEntity typeCommissionEntity;
     BigDecimal price;
-    double minimal;
+    @ManyToOne
+    CommissionEntity commissionEntity;
+
+    public CommissionDetailEntity(Long id, String ref, Instant createdAt, Instant updatedAt, TypeCommissionEntity typeCommissionEntity, BigDecimal price) {
+        super(id, ref, createdAt, updatedAt);
+        this.typeCommissionEntity = typeCommissionEntity;
+        this.price = price;
+    }
+
 }
