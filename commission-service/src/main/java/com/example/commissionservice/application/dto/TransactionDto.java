@@ -13,7 +13,7 @@ public class TransactionDto {
     private Instant createdAt;
     private Instant updatedAt;
 
-    private TransactionTypeDto typeTransaction;
+    private TransactionType typeTransaction;
     private TransactionEtatDto etatTransaction;
 
     private CommissionDto commission;
@@ -54,11 +54,11 @@ public class TransactionDto {
         this.updatedAt = updatedAt;
     }
 
-    public TransactionTypeDto getTypeTransaction() {
+    public TransactionType getTypeTransaction() {
         return typeTransaction;
     }
 
-    public void setTypeTransaction(TransactionTypeDto typeTransaction) {
+    public void setTypeTransaction(TransactionType typeTransaction) {
         this.typeTransaction = typeTransaction;
     }
 

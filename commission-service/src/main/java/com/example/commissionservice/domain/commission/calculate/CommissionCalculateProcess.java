@@ -1,4 +1,6 @@
 package com.example.commissionservice.domain.commission.calculate;
 
-public interface CommissionCalculateProcess {
+import com.example.commissionservice.domain.core.AbstractProcess;
+
+public interface CommissionCalculateProcess extends AbstractProcess<CommissionCalculateInput> {
 }

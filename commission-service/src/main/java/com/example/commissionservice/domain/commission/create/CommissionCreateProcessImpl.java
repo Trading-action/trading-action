@@ -8,7 +8,7 @@ import com.example.commissionservice.infra.facade.CommissionInfra;
 
 public class CommissionCreateProcessImpl extends AbstractProcessImpl<CommissionCreateInput> implements CommissionCreateProcess {
 
-    private CommissionInfra commissionInfra;
+    private final CommissionInfra commissionInfra;
 
     public CommissionCreateProcessImpl(CommissionInfra commissionInfra) {
         this.commissionInfra = commissionInfra;
@@ -28,8 +28,7 @@ public class CommissionCreateProcessImpl extends AbstractProcessImpl<CommissionC
         commission.setRef(commissionCreateInput.getRef());
         commission.setTotalPrice(commissionCreateInput.getTotalPrice());
         commission.setDateCommission(commissionCreateInput.getDateCommission());
-        Action action = new Action();
-        action.setRef(commissionCreateInput.getRefAction());
+        Action action = new Action(commissionCreateInput.getRefAction());
         commission.setAction(action);
         commissionInfra.save(commission);
         result.addInfoMessage(commissionInfra.getMessage("commission.created"));

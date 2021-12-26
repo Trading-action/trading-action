@@ -4,12 +4,16 @@ import java.time.Instant;
 import java.util.List;
 
 public class CompteType {
-   private Long id;
+    private Long id;
     private String ref;
     private String libelle;
     private Instant createdAt;
     private Instant updatedAt;
     private List<Compte> comptes;
+
+    public CompteType(String ref) {
+        this.ref = ref;
+    }
 
     public String getLibelle() {
         return libelle;

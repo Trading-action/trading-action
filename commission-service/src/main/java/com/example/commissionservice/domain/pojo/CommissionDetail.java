@@ -1,18 +1,37 @@
 package com.example.commissionservice.domain.pojo;
 
 
+import com.example.commissionservice.infra.entity.TypeCommissionEntity;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 
-public class CommissionDetail   {
+public class CommissionDetail {
     private Long id;
     private String ref;
     private Instant createdAt;
     private Instant updatedAt;
-    private String libelle;
+    private BigDecimal price;
     TypeCommission typeCommission;
-    private  boolean tva;
-    private double minimal;
+    Commission commission;
+
+    public CommissionDetail(Long id, String ref, Instant createdAt, Instant updatedAt, BigDecimal price, TypeCommission typeCommission) {
+        this.id = id;
+        this.ref = ref;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.price = price;
+        this.typeCommission = typeCommission;
+    }
+
+    public CommissionDetail( String ref, BigDecimal price, TypeCommission typeCommission) {
+        this.ref = ref;
+        this.price = price;
+        this.typeCommission = typeCommission;
+    }
+
+    public CommissionDetail() {
+    }
 
     public Long getId() {
         return id;
@@ -46,12 +65,12 @@ public class CommissionDetail   {
         this.updatedAt = updatedAt;
     }
 
-    public String getLibelle() {
-        return libelle;
+    public BigDecimal getPrice() {
+        return price;
     }
 
-    public void setLibelle(String libelle) {
-        this.libelle = libelle;
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     public TypeCommission getTypeCommission() {
@@ -62,19 +81,23 @@ public class CommissionDetail   {
         this.typeCommission = typeCommission;
     }
 
-    public boolean isTva() {
-        return tva;
+    public Commission getCommission() {
+        return commission;
     }
 
-    public void setTva(boolean tva) {
-        this.tva = tva;
+    public void setCommission(Commission commission) {
+        this.commission = commission;
     }
 
-    public double getMinimal() {
-        return minimal;
-    }
-
-    public void setMinimal(double minimal) {
-        this.minimal = minimal;
+    @Override
+    public String toString() {
+        return "CommissionDetail{" +
+                "id=" + id +
+                ", ref='" + ref + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", price=" + price +
+                ", typeCommission=" + typeCommission +
+                '}';
     }
 }

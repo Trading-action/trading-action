@@ -10,6 +10,15 @@ public class Compte {
     private String refTypeCompte;
     private String refActionnaire;
 
+    public Compte() {
+    }
+
+    public Compte(Long id, String ref, String refTypeCompte) {
+        this.id = id;
+        this.ref = ref;
+        this.refTypeCompte = refTypeCompte;
+    }
+
     public Long getId() {
         return id;
     }

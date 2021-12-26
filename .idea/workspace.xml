@@ -4,37 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25e82ce8-d8ab-43ad-abd5-ab5479e8daf5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/trading/clientservice/ClientServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/ws/CommissionRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application/ws/CommissionRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/commission-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/java/com/trading/action/entreprise/EntrepriseServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/entreprise-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/trading/action/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/promotheus-grafana/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" beforeDir="false" afterPath="$PROJECT_DIR$/promotheus-grafana/promotheus-grafana.iml" afterDir="false" />
-    </list>
+    <list default="true" id="25e82ce8-d8ab-43ad-abd5-ab5479e8daf5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="22ZFzJtj0zELVHuSv8XasXBz8ba" />
   <component name="ProjectViewState">
@@ -49,6 +43,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/commission-service/src/main/java/com/example/commissionservice/application" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.commissionservice.application.utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CommissionServiceApplication">
     <configuration name="BourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -123,7 +137,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640037467987</updated>
-      <workItem from="1640037474676" duration="2321000" />
+      <workItem from="1640037474676" duration="3330000" />
+      <workItem from="1640044908807" duration="46000" />
+      <workItem from="1640045068981" duration="9780000" />
+      <workItem from="1640278134153" duration="59588000" />
     </task>
     <servers />
   </component>

@@ -2,32 +2,25 @@ package com.example.commissionservice.application.dto;
 
 
 import com.trading.clientservice.domain.compte.create.CompteCreateInput;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class CompteDto {
-    private String ref;
-    private String refTypeCompte;
+    Long id;
+    String ref;
+    String refTypeCompte;
 
-    public String getRef() {
-        return ref;
-    }
-
-    public void setRef(String ref) {
-        this.ref = ref;
-    }
-
-    public String getRefTypeCompte() {
-        return refTypeCompte;
-    }
-
-    public void setRefTypeCompte(String refTypeCompte) {
-        this.refTypeCompte = refTypeCompte;
-    }
-
-   public static CompteCreateInput toCompteCreatenput(CompteDto compteDto) {
-       CompteCreateInput compteCreatenput = new CompteCreateInput();
-       compteCreatenput.setRef(compteDto.getRef());
-       compteCreatenput.setRefCompteType(compteDto.getRefTypeCompte());
-
+    public static CompteCreateInput toCompteCreatenput(CompteDto compteDto) {
+        CompteCreateInput compteCreatenput = new CompteCreateInput();
+        compteCreatenput.setRef(compteDto.getRef());
+        compteCreatenput.setRefCompteType(compteDto.getRefTypeCompte());
         return compteCreatenput;
     }
 }

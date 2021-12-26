@@ -1,9 +1,22 @@
 package com.example.commissionservice.application.utils;
 
 
+import com.example.commissionservice.domain.TypeCommission.create.TypeCommissionCreateProcess;
+import com.example.commissionservice.domain.TypeCommission.create.TypeCommissionCreateProcessImpl;
+import com.example.commissionservice.domain.TypeCommission.findApplicableTypeCommissions.FindApplicableTypeCommissionsProcess;
+import com.example.commissionservice.domain.TypeCommission.findApplicableTypeCommissions.FindApplicableTypeCommissionsProcessImpl;
+import com.example.commissionservice.domain.commission.calculate.CommissionCalculateProcess;
+import com.example.commissionservice.domain.commission.calculate.CommissionCalculateProcessImpl;
 import com.example.commissionservice.domain.commission.create.CommissionCreateProcess;
 import com.example.commissionservice.domain.commission.create.CommissionCreateProcessImpl;
+import com.example.commissionservice.domain.commissionDetail.create.CommissionDetailCreateProcess;
+import com.example.commissionservice.domain.commissionDetail.create.CommissionDetailCreateProcessImpl;
+import com.example.commissionservice.domain.commissionDetail.findByCommissionRef.FindByCommissionRefProcess;
+import com.example.commissionservice.domain.commissionDetail.findByCommissionRef.FindByCommissionRefProcessImpl;
+import com.example.commissionservice.domain.pojo.CommissionDetail;
+import com.example.commissionservice.infra.facade.CommissionDetailInfra;
 import com.example.commissionservice.infra.facade.CommissionInfra;
+import com.example.commissionservice.infra.facade.TypeCommissionInfra;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,8 +24,33 @@ import org.springframework.context.annotation.Configuration;
 public class ProcessInjection {
 
     @Bean
-    public CommissionCreateProcess commissionCreateProcess(CommissionInfra commissionInfra){
+    public CommissionCreateProcess commissionCreateProcess(CommissionInfra commissionInfra) {
         return new CommissionCreateProcessImpl(commissionInfra);
+    }
+
+    @Bean
+    public TypeCommissionCreateProcess typeCommissionCreateProcess(TypeCommissionInfra typeCommissionInfra) {
+        return new TypeCommissionCreateProcessImpl(typeCommissionInfra);
+    }
+
+    @Bean
+    public FindApplicableTypeCommissionsProcess findApplicableTypeCommissionsProcess(TypeCommissionInfra typeCommissionInfra) {
+        return new FindApplicableTypeCommissionsProcessImpl(typeCommissionInfra);
+    }
+
+    @Bean
+    public CommissionCalculateProcess commissionCalculateProcess(CommissionInfra commissionInfra) {
+        return new CommissionCalculateProcessImpl(commissionInfra);
+    }
+
+    @Bean
+    public CommissionDetailCreateProcess commissionDetailCreateProcess(CommissionDetailInfra commissionDetailInfra, TypeCommissionInfra typeCommissionInfra) {
+        return new CommissionDetailCreateProcessImpl(commissionDetailInfra, typeCommissionInfra);
+    }
+
+    @Bean
+    public FindByCommissionRefProcess findByCommissionRefProcess(CommissionInfra commissionInfra){
+        return new FindByCommissionRefProcessImpl(commissionInfra);
     }
 }
 
