@@ -7,11 +7,18 @@ import com.example.commissionservice.domain.commission.calculate.CommissionCalcu
 import com.example.commissionservice.domain.commission.create.CommissionCreateInput;
 import com.example.commissionservice.domain.commission.create.CommissionCreateProcess;
 import com.example.commissionservice.domain.core.Result;
+import com.example.commissionservice.domain.pojo.Commission;
+import com.example.commissionservice.infra.facade.CommissionInfra;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/commission")
@@ -22,6 +29,9 @@ public class CommissionRest {
 
     private final CommissionCreateProcess commissionCreateProcess;
     private final CommissionCalculateProcess commissionCalculateProcess;
+
+    @Autowired
+    private CommissionInfra commissionInfra;
 
     @PostMapping("/")
     @Operation(summary = "Save commission")
@@ -35,6 +45,15 @@ public class CommissionRest {
     public Result calculateCommission(@RequestBody CalculateCommissionDto calculateCommissionDto) {
         CommissionCalculateInput commissionCalculateInput = CalculateCommissionDto.toCommissionCalculateInput(calculateCommissionDto);
         return commissionCalculateProcess.execute(commissionCalculateInput);
+    }
+
+    @GetMapping("/")
+    @Operation(summary = "Find All Commissions")
+    public Result findAll() {
+        Result result = new Result();
+        List<Commission> commissions = commissionInfra.findAll();
+        result.setOutput(commissions);
+        return result;
     }
 
 }

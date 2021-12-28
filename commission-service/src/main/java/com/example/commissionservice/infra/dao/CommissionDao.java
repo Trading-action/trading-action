@@ -10,4 +10,5 @@ public interface CommissionDao extends JpaRepository<CommissionEntity, Long> {
     CommissionEntity findByRefAction(String refAction);
 
     CommissionEntity findByRef(String ref);
+
 }

@@ -17,7 +17,7 @@ public interface CommissionInfra extends AbstractInfra {
 
     int update(Commission commission);
 
-    List<CommissionEntity> findAll();
+    List<Commission> findAll();
 
     Commission findByRef(String ref);
 

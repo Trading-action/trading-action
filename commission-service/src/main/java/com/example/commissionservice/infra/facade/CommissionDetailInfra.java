@@ -3,6 +3,7 @@ package com.example.commissionservice.infra.facade;
 import com.example.commissionservice.domain.pojo.Commission;
 import com.example.commissionservice.domain.pojo.CommissionDetail;
 import com.example.commissionservice.infra.core.AbstractInfra;
+import com.example.commissionservice.infra.entity.CommissionDetailEntity;
 
 import java.util.List;
 
@@ -12,5 +13,5 @@ public interface CommissionDetailInfra extends AbstractInfra {
 
     CommissionDetail save(CommissionDetail commissionDetail);
 
-    //int update(CommissionDetail commissionDetail);
+    List<CommissionDetail> findByOperationType(String operationType);
 }

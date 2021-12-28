@@ -8,6 +8,7 @@ import com.example.commissionservice.infra.core.AbstractInfraImpl;
 import com.example.commissionservice.infra.dao.CommissionDetailDao;
 import com.example.commissionservice.infra.entity.CommissionDetailEntity;
 import com.example.commissionservice.infra.facade.CommissionDetailInfra;
+import com.example.commissionservice.infra.utils.Converter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,6 +41,14 @@ public class CommissionDetailInfraImpl extends AbstractInfraImpl implements Comm
         CommissionDetailsConverter commissionDetailsConverter = new CommissionDetailsConverter();
         CommissionDetailEntity commissionDetailEntity = commissionDetailsConverter.convertFromPojos(commissionDetail);
         return commissionDetailsConverter.convertFromEntity(commissionDetailDao.save(commissionDetailEntity));
+    }
+
+    @Override
+    public List<CommissionDetail> findByOperationType(String operationType) {
+        Converter<CommissionDetail, CommissionDetailEntity> commissionDetailCommissionDetailEntityConverter = new CommissionDetailsConverter();
+        List<CommissionDetailEntity> commissionDetailEntities = commissionDetailDao.findByOperationType(operationType);
+        List<CommissionDetail> commissionDetails = commissionDetailCommissionDetailEntityConverter.createFromEntities(commissionDetailEntities);
+        return commissionDetails;
     }
 
 

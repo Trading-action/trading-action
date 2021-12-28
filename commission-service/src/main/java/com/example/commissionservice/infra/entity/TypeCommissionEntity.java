@@ -4,6 +4,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
+import java.math.BigDecimal;
 import java.time.Instant;
 
 @Data
@@ -19,10 +20,10 @@ public class TypeCommissionEntity extends AbstractEntity {
     String refTypeCompte;
     Float percentage;
     boolean tva;
-    double minimal;
+    BigDecimal minimal;
     String operationType;
 
-    public TypeCommissionEntity(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, String refTypeCompte, Float percentage, boolean tva, double minimal, String operationType) {
+    public TypeCommissionEntity(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, String refTypeCompte, Float percentage, boolean tva, BigDecimal minimal, String operationType) {
         super(id, ref, createdAt, updatedAt);
         this.label = label;
         this.applicationDateMin = applicationDateMin;

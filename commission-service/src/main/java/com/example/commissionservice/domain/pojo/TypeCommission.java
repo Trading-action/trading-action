@@ -1,5 +1,6 @@
 package com.example.commissionservice.domain.pojo;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 
 public class TypeCommission {
@@ -13,10 +14,10 @@ public class TypeCommission {
     CompteType typeCompte;
     Float percentage;
     boolean tva;
-    double minimal;
+    BigDecimal minimal;
     String operationType;
 
-    public TypeCommission(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, CompteType typeCompte, Float percentage, boolean tva, double minimal, String operationType) {
+    public TypeCommission(Long id, String ref, Instant createdAt, Instant updatedAt, String label, Instant applicationDateMin, Instant applicationDateMax, CompteType typeCompte, Float percentage, boolean tva, BigDecimal minimal, String operationType) {
         this.id = id;
         this.ref = ref;
         this.createdAt = createdAt;
@@ -123,11 +124,11 @@ public class TypeCommission {
         this.operationType = operationType;
     }
 
-    public double getMinimal() {
+    public BigDecimal getMinimal() {
         return minimal;
     }
 
-    public void setMinimal(double minimal) {
+    public void setMinimal(BigDecimal minimal) {
         this.minimal = minimal;
     }
 
