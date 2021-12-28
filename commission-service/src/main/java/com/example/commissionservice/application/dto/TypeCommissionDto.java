@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.BeanUtils;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 
 @AllArgsConstructor
@@ -27,7 +28,7 @@ public class TypeCommissionDto {
     String refCompteType;
     Float percentage;
     boolean tva;
-    double minimal;
+    BigDecimal minimal;
     String operationType;
 
     public static FindApplicableTypeCommissionsInput toFindApplicableTypeCommissionsInput(Instant operationDate) {
