@@ -40,12 +40,18 @@ public class CommissionRest {
         return commissionCreateProcess.execute(commissionCreateInput);
     }
 
-    @GetMapping("/calculate")
-    @Operation(summary = "Calculate commission of a given action")
+    @PostMapping("/calculate")
+    @Operation(summary = "Calculate commission of a given action and a given account in the current date and save it with it's details")
     public Result calculateCommission(@RequestBody CalculateCommissionDto calculateCommissionDto) {
         CommissionCalculateInput commissionCalculateInput = CalculateCommissionDto.toCommissionCalculateInput(calculateCommissionDto);
         return commissionCalculateProcess.execute(commissionCalculateInput);
     }
+
+    // TODO: Create get Commission By Ref
+
+    // TODO: Create get Commission By RefAction and AccountRef
+
+    // TODO: Create get Commission By RefAction and AccountRef and Operation Date
 
     @GetMapping("/")
     @Operation(summary = "Find All Commissions")

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="01" author="Alio">
+        <comment>Inserting Commission Types</comment>
+        <insert tableName="type_commission_entity">
+            <column name="ref" value="type1"></column>
+            <column name="application_date_max" valueDate="2022-01-15 22:01:30.405000"></column>
+            <column name="application_date_min" valueDate="2022-01-03 22:01:30.404000"></column>
+            <column name="label" value="Type 1"></column>
+            <column name="minimal" valueNumeric="100.00"></column>
+            <column name="percentage" valueNumeric="20"></column>
+            <column name="operation_type" value="ACHAT"></column>
+            <column name="tva" valueBoolean="TRUE"></column>
+            <column name="ref_type_compte" value="typeCompte1"></column>
+        </insert>
+        <insert tableName="type_commission_entity">
+            <column name="ref" value="type2"></column>
+            <column name="application_date_max" valueDate="2022-02-15 22:01:30.405000"></column>
+            <column name="application_date_min" valueDate="2022-01-05 22:01:30.404000"></column>
+            <column name="label" value="Type 2"></column>
+            <column name="minimal" valueNumeric="300.00"></column>
+            <column name="percentage" valueNumeric="50"></column>
+            <column name="operation_type" value="VENTE"></column>
+            <column name="tva" valueBoolean="FALSE"></column>
+            <column name="ref_type_compte" value="typeCompte1"></column>
+        </insert>
+        <insert tableName="type_commission_entity">
+            <column name="ref" value="type3"></column>
+            <column name="application_date_max" value="2022-01-15 22:01:30.405000"></column>
+            <column name="application_date_min" value="2021-12-01 22:01:30.404000"></column>
+            <column name="label" value="Type 3"></column>
+            <column name="minimal" valueNumeric="143.40"></column>
+            <column name="percentage" valueNumeric="22.3"></column>
+            <column name="operation_type" value="ACHAT"></column>
+            <column name="tva" valueBoolean="TRUE"></column>
+            <column name="ref_type_compte" value="typeCompte1"></column>
+        </insert>
+        <insert tableName="type_commission_entity">
+            <column name="id" valueSequenceNext="hibernate_sequence"></column>
+            <column name="ref" value="type4"></column>
+            <column name="application_date_max" value="2022-12-01 22:01:30.404000"></column>
+            <column name="application_date_min" value="2022-01-01 22:01:30.405000"></column>
+            <column name="label" value="Type 4"></column>
+            <column name="minimal" valueNumeric="1000"></column>
+            <column name="percentage" valueNumeric="2.643"></column>
+            <column name="operation_type" value="ACHAT"></column>
+            <column name="tva" valueBoolean="FALSE"></column>
+            <column name="ref_type_compte" value="typeCompte1"></column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -4,6 +4,7 @@ import com.example.commissionservice.domain.core.AbstractProcessInput;
 import com.example.commissionservice.domain.pojo.CompteType;
 import com.example.commissionservice.domain.pojo.TransactionType;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 
 public class TypeCommissionCreateInput extends AbstractProcessInput {
@@ -14,7 +15,7 @@ public class TypeCommissionCreateInput extends AbstractProcessInput {
     CompteType compteType;
     Float percentage;
     boolean tva;
-    double minimal;
+    BigDecimal minimal;
     String operationType;
 
     public String getRef() {
@@ -73,11 +74,11 @@ public class TypeCommissionCreateInput extends AbstractProcessInput {
         this.tva = tva;
     }
 
-    public double getMinimal() {
+    public BigDecimal getMinimal() {
         return minimal;
     }
 
-    public void setMinimal(double minimal) {
+    public void setMinimal(BigDecimal minimal) {
         this.minimal = minimal;
     }
 

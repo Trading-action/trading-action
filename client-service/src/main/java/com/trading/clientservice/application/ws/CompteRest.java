@@ -4,6 +4,7 @@ import com.trading.clientservice.application.dto.CompteDto;
 import com.trading.clientservice.domain.compte.create.CompteCreateInput;
 import com.trading.clientservice.domain.compte.create.CompteCreateProcess;
 import com.trading.clientservice.domain.core.Result;
+import com.trading.clientservice.domain.pojo.Compte;
 import com.trading.clientservice.infra.entity.CompteEntity;
 import com.trading.clientservice.infra.facade.CompteInfra;
 import io.swagger.v3.oas.annotations.Operation;
@@ -34,6 +35,15 @@ public class CompteRest {
     @GetMapping("/")
     public List<CompteEntity> findAll() {
         return compteInfra.findAll();
+    }
+
+    @GetMapping("/ref/{ref}")
+    @Operation(summary = "Find Account by reference")
+    public Result findByRef(@PathVariable String ref){
+        Result result = new Result();
+        Compte compte = compteInfra.findByRef(ref);
+        result.setOutput(compte);
+        return result;
     }
 
 

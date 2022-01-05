@@ -1,6 +1,7 @@
 package com.trading.clientservice.application.ws;
 
 import com.trading.clientservice.application.dto.CompteTypeDto;
+import com.trading.clientservice.domain.core.Result;
 import com.trading.clientservice.domain.pojo.CompteType;
 import com.trading.clientservice.infra.entity.CompteTypeEntity;
 import com.trading.clientservice.infra.facade.CompteTypeInfra;
@@ -33,6 +34,15 @@ public class CompteTypeRest {
         compteType.setRef(compteTypeDto.getRef());
         compteType.setLibelle(compteTypeDto.getLibelle());
         return compteTypeInfra.save(compteType);
+    }
+
+    @GetMapping("/ref/{ref}")
+    @Operation(summary = "Find compte Type by Reference")
+    public Result findByRef(@PathVariable String ref){
+        Result result = new Result();
+        CompteType compteType = compteTypeInfra.findByRef(ref);
+        result.setOutput(compteType);
+        return result;
     }
 
 }

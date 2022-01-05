@@ -33,7 +33,7 @@ public class TypeCommissionRest {
     }
 
     @Operation(summary = "")
-    @GetMapping("/applicable-commission-types/")
+    @PostMapping("/applicable-commission-types")
     public Result findApplicableTypeCommissions(@RequestBody ApplicableTypeCommissionsDto applicableTypeCommissionsDto) {
 
         FindApplicableTypeCommissionsInput findApplicableTypeCommissionsInput = ApplicableTypeCommissionsDto.toFindApplicableTypeCommissionsInput(applicableTypeCommissionsDto);

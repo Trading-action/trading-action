@@ -1,5 +1,13 @@
 spring:
   application:
     name: BOURSE-SERVICE
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    url: jdbc:mysql://localhost/bourse_service
+    user: root
+    password:
+
   zipkin:
     base-url: http://localhost:9411/

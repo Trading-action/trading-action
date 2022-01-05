@@ -22,6 +22,10 @@ public class TypeCommissionCreateProcessImpl extends AbstractProcessImpl<TypeCom
         if (typeCommission != null) {
             result.addErrorMessage(typeCommissionInfra.getMessage("typeCommission.already_exists"));
         }
+
+        if (typeCommissionCreateInput.getMinimal() == null){
+            result.addErrorMessage(typeCommissionInfra.getMessage("typeCommission.minimal_is_null"));
+        }
     }
 
     @Override

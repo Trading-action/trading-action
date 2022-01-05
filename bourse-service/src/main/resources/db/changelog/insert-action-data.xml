@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="1.0.1" author="Alio">
+        <comment>Inserting Account Data</comment>
+        <insert tableName="action_entity">
+            <column name="id" valueComputed="(SELECT next_val FROM hibernate_sequence)"></column>
+            <column name="reference" value="action1"></column>
+            <column name="prix" valueNumeric="200.00"></column>
+            <column name="reference_entreprise" value="Somadair"></column>
+            <column name="username_actionnaire" value="actionnaire1"></column>
+            <column name="in_bourse" valueBoolean="true"></column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -55,4 +55,12 @@ public class ActionRest {
         return actionInfra.findEntreprisesByUsernameActionnaire(username);
     }
 
+    @GetMapping("/ref/{ref}")
+    public Result findByRef(@PathVariable String ref){
+        Result result = new Result();
+        Action action = actionInfra.findByReference(ref);
+        result.setOutput(action);
+        return result;
+    }
+
 }

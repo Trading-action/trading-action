@@ -17,6 +17,8 @@ import com.example.commissionservice.domain.pojo.CommissionDetail;
 import com.example.commissionservice.infra.facade.CommissionDetailInfra;
 import com.example.commissionservice.infra.facade.CommissionInfra;
 import com.example.commissionservice.infra.facade.TypeCommissionInfra;
+import com.example.commissionservice.infra.required.BourseService;
+import com.example.commissionservice.infra.required.ClientService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -34,13 +36,13 @@ public class ProcessInjection {
     }
 
     @Bean
-    public FindApplicableTypeCommissionsProcess findApplicableTypeCommissionsProcess(TypeCommissionInfra typeCommissionInfra) {
-        return new FindApplicableTypeCommissionsProcessImpl(typeCommissionInfra);
+    public FindApplicableTypeCommissionsProcess findApplicableTypeCommissionsProcess(TypeCommissionInfra typeCommissionInfra, ClientService clientService) {
+        return new FindApplicableTypeCommissionsProcessImpl(typeCommissionInfra, clientService);
     }
 
     @Bean
-    public CommissionCalculateProcess commissionCalculateProcess(CommissionInfra commissionInfra) {
-        return new CommissionCalculateProcessImpl(commissionInfra);
+    public CommissionCalculateProcess commissionCalculateProcess(CommissionInfra commissionInfra, ClientService clientService, BourseService bourseService) {
+        return new CommissionCalculateProcessImpl(commissionInfra, clientService, bourseService);
     }
 
     @Bean
@@ -49,7 +51,7 @@ public class ProcessInjection {
     }
 
     @Bean
-    public FindByCommissionRefProcess findByCommissionRefProcess(CommissionInfra commissionInfra){
+    public FindByCommissionRefProcess findByCommissionRefProcess(CommissionInfra commissionInfra) {
         return new FindByCommissionRefProcessImpl(commissionInfra);
     }
 }

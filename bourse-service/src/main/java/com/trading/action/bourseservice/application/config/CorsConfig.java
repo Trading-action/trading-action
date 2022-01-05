@@ -1,4 +1,4 @@
-package com.trading.action.entreprise.application.config;
+package com.trading.action.bourseservice.application.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

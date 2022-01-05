@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet author="mac" id="1640811881135-1">
+        <createTable tableName="commission_detail_entity">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="commission_detail_entity_pkey"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="ref" type="VARCHAR(255)"/>
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="price" type="numeric(19, 2)"/>
+            <column name="type_commission_entity_id" type="BIGINT"/>
+            <column name="commission_entity_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-2">
+        <createTable tableName="type_commission_entity">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="type_commission_entity_pkey"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="ref" type="VARCHAR(255)"/>
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="application_date_max" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="application_date_min" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="label" type="VARCHAR(255)"/>
+            <column name="minimal" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation_type" type="VARCHAR(255)"/>
+            <column name="percentage" type="FLOAT4"/>
+            <column name="ref_type_compte" type="VARCHAR(255)"/>
+            <column name="tva" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-3">
+        <createTable tableName="commission_entity">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="commission_entity_pkey"/>
+            </column>
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="ref" type="VARCHAR(255)"/>
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="date_commission" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="ref_action" type="VARCHAR(255)"/>
+            <column name="total_price" type="numeric(19, 2)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-4">
+        <createTable tableName="commission_entity_commission_details">
+            <column name="commission_entity_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="commission_details_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-5">
+        <addForeignKeyConstraint baseColumnNames="type_commission_entity_id" baseTableName="commission_detail_entity" constraintName="fk4b9lkydxofp5oe5plwh2e37fl" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="type_commission_entity" validate="true"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-6">
+        <addForeignKeyConstraint baseColumnNames="commission_details_id" baseTableName="commission_entity_commission_details" constraintName="fklccrv8typrdo0uwy0iqew79vn" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="commission_detail_entity" validate="true"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-7">
+        <addForeignKeyConstraint baseColumnNames="commission_entity_id" baseTableName="commission_detail_entity" constraintName="fkqa52hicu9dh7ntowmltt55alx" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="commission_entity" validate="true"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-8">
+        <addUniqueConstraint columnNames="ref" constraintName="uk_rxb6mhmf8el7dgl5knuynw1sb" tableName="commission_detail_entity"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-9">
+        <addUniqueConstraint columnNames="ref" constraintName="uk_a4ehtu63kpcphnw2e3j1vum1j" tableName="type_commission_entity"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-10">
+        <addForeignKeyConstraint baseColumnNames="commission_entity_id" baseTableName="commission_entity_commission_details" constraintName="fk9ebsqjbk03u1ykvad2udgeju" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="commission_entity" validate="true"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-11">
+        <addUniqueConstraint columnNames="ref" constraintName="uk_texp7un80cqe27sr04r5r190i" tableName="commission_entity"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-12">
+        <addUniqueConstraint columnNames="commission_details_id" constraintName="uk_an6rdsx4gkxinv6ujen9hcey8" tableName="commission_entity_commission_details"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-13">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="1" maxValue="9223372036854775807" minValue="1" sequenceName="hibernate_sequence" startValue="1"/>
+    </changeSet>
+    <changeSet author="mac" id="1640811881135-14">
+        <createTable tableName="person">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="person_pkey"/>
+            </column>
+            <column name="firstname" type="VARCHAR(50)"/>
+            <column name="lastname" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="CHAR(2)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -107,7 +107,7 @@ public class CommissionInfraImpl extends AbstractInfraImpl implements Commission
                     BigDecimal minimal = typeCommission.getMinimal();
 
                     commissionPrice = commissionPrice.add(percentage.multiply(actionPrice));
-
+                    System.out.println("minimal: " + minimal);
                     // If the commissionPrice is less than the minimal price => commissionPrice = minimal
                     if (commissionPrice.compareTo(minimal) == -1) {
                         commissionPrice = minimal;

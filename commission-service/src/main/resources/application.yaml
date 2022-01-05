@@ -2,6 +2,7 @@ spring:
   application:
     name: COMMISSION-SERVICE
 
+
   #h2:
   #  console.path: /h2-console
   #  console.enabled: true
@@ -12,6 +13,21 @@ spring:
     username: mac
     password:
     driverClassName: org.postgresql.Driver
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    url: jdbc:postgresql://localhost:5432/commission
+    user: mac
+    password:
+
+logging:
+  level:
+    "liquibase" : info
+
+liquibase:
+  outputChangeLogFile: src/main/resources/db/changelog/changelog-1.0.0.xml
+  changeLogFile: classpath:db/changelog/db.changelog-master.xml
 
 server:
   port: 8089

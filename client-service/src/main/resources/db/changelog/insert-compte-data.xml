@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="1.0.2" author="Alio">
+        <comment>Inserting Account Data</comment>
+        <insert tableName="compte_entity">
+            <column name="id" valueComputed="(SELECT next_val FROM hibernate_sequence)"></column>
+            <column name="ref" value="compte1"></column>
+            <column name="type_compte" valueComputed="(SELECT ID FROM COMPTE_TYPE_ENTITY ct WHERE ct.REF='typeCompte1')"></column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
