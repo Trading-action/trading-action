@@ -9,17 +9,16 @@ spring:
   #  console.settings.trace: false
   #  spring.h2.console.settings.web-allow-others: false
   datasource:
-    url: jdbc:postgresql://localhost:5432/commission
-    username: mac
-    password:
-    driverClassName: org.postgresql.Driver
+    url:  jdbc:postgresql://db.qrwvmkaiazrwlwoyxfgq.supabase.co:5432/postgres
+    username: postgres
+    password: abdelati470952
   liquibase:
     enabled: true
     drop-first: false
     change-log: classpath:db/changelog/db.changelog-master.xml
-    url: jdbc:postgresql://localhost:5432/commission
-    user: mac
-    password:
+    url:  jdbc:postgresql://db.qrwvmkaiazrwlwoyxfgq.supabase.co:5432/postgres
+    user: postgres
+    password: abdelati470952
 
 logging:
   level:

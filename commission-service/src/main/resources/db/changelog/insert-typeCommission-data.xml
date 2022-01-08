@@ -4,10 +4,10 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
-
     <changeSet id="01" author="Alio">
         <comment>Inserting Commission Types</comment>
         <insert tableName="type_commission_entity">
+            <column name="id" valueSequenceNext="hibernate_sequence"></column>
             <column name="ref" value="type1"></column>
             <column name="application_date_max" valueDate="2022-01-15 22:01:30.405000"></column>
             <column name="application_date_min" valueDate="2022-01-03 22:01:30.404000"></column>
@@ -19,6 +19,7 @@
             <column name="ref_type_compte" value="typeCompte1"></column>
         </insert>
         <insert tableName="type_commission_entity">
+            <column name="id" valueSequenceNext="hibernate_sequence"></column>
             <column name="ref" value="type2"></column>
             <column name="application_date_max" valueDate="2022-02-15 22:01:30.405000"></column>
             <column name="application_date_min" valueDate="2022-01-05 22:01:30.404000"></column>
@@ -30,6 +31,7 @@
             <column name="ref_type_compte" value="typeCompte1"></column>
         </insert>
         <insert tableName="type_commission_entity">
+            <column name="id" valueSequenceNext="hibernate_sequence"></column>
             <column name="ref" value="type3"></column>
             <column name="application_date_max" value="2022-01-15 22:01:30.405000"></column>
             <column name="application_date_min" value="2021-12-01 22:01:30.404000"></column>
