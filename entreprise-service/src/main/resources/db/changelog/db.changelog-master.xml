@@ -4,9 +4,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
-
-
-    <include file="db/changelog/insert-secteur-data.xml"/>
-    <include file="db/changelog/insert-entreprise-data.xml"/>
-
+    <changeSet id="1641650960710-1" author="faissal">
+        <sqlFile path="db/changelog/insert_price_data.sql"/>
+    </changeSet>
+    <changeSet id="1641650544264-1" author="faissal">
+        <sqlFile path="db/changelog/insert_secteur_data.sql"/>
+    </changeSet>
+    <changeSet id="1641650662454-1" author="faissal">
+        <sqlFile path="db/changelog/insert_entreprise_data.sql"/>
+    </changeSet>
 </databaseChangeLog>
